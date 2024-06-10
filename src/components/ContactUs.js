@@ -1,6 +1,6 @@
 import React from "react";
 
-function ContactUS() {
+function ContactUs() {
   return (
     <div>
       <section id="contact" className="details">
