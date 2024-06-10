@@ -6,9 +6,12 @@ function App() {
     <div className="App">
       {/* Header Section */}
       <header className="header">
+        <div className="scrolling-text">
+          <div>Welcome to Cake Creations!</div>
+        </div>
         {/* Navigation Menu */}
         <nav className="navigation">
-          <h1 className="CompanyName">Cake</h1>
+          <h1 className="CompanyName">Cake Creations</h1>
           <ul className="list">
             <li>
               <a href="#home">Home</a>
@@ -17,7 +20,7 @@ function App() {
               <a href="#cakes">Cakes</a>
             </li>
             <li>
-              <a href="#aboutus">About Us</a>
+              <a href="#aboutus">About</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
@@ -27,7 +30,6 @@ function App() {
             </li>
           </ul>
         </nav>
-        <div className="scrolling-text">Hey,Welcome to Cake Creations!</div>
       </header>
 
       {/* Main Content Section */}

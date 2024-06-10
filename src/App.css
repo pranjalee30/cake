@@ -1,21 +1,20 @@
-/* App.css */
-
 /* Reset default margin and padding */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 /* Global Styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+  margin: 100px 20px 20px 50px;
 }
+
 .CompanyName {
-  padding: 0px;
   display: flex;
-  font-size: 40px;
+  font-size: 150%;
+  padding-right: 30px;
 }
 
 .App {
@@ -26,69 +25,78 @@ body {
 
 /* Header Styles */
 .header {
-  padding: 20px;
+  padding: 10px;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .header h1 {
   color: #050000;
   margin-bottom: 20px;
 }
+
 .navigation {
   display: flex;
-  position: relative;
-  margin-bottom: 20px;
-  flex-direction: row;
-  justify-content: end;
+  justify-content: row;
+  background-color: #f8f9fa;
+  padding: 3%;
 }
 
-.list {
-  font-size: 25px;
-  display: flex;
-}
-
-nav ul {
+.navigation ul {
   list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  padding-left: 50%;
+  font-size: 120%;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 20px;
+.navigation ul li {
+  margin-right: 2%;
+  padding: 3%;
 }
 
-nav ul li a {
+.navigation ul li a {
   text-decoration: none;
   color: #555;
 }
+
+/* Scrolling Text */
 .scrolling-text {
+  position: absolute;
+  color: rgb(57, 34, 4);
+  left: 35%;
+  right: 35%;
+  top: 20%;
+  transform: translate(-50%, -50%);
   white-space: nowrap;
   overflow: hidden;
-  animation: marquee 10s linear infinite;
+  animation: scrollText 10s linear infinite;
 }
 
-@keyframes marquee {
+@keyframes scrollText {
   0% {
-    transform: translateX(100%);
-  }
-  100% {
     transform: translateX(-100%);
   }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
 /* Main Content Styles */
 main {
-  padding: 20px 0;
+  padding: 10px;
 }
 
 .hero {
   background-color: #f8f9fa;
-  padding: 50px;
+  padding: 10px;
   text-align: center;
 }
 
-.hero h2 {
+.hero h1 {
   color: #333;
   margin-bottom: 20px;
+  font-size: 200%;
 }
 
 .hero p {
@@ -103,12 +111,21 @@ main {
   color: #fff;
   text-decoration: none;
   border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  border-radius: 50% 50% 9% 9%;
+  transition: background-color 0.4s ease;
+}
+
+.btn::before {
+  content: "";
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  z-index: 1;
+  border-radius: 50% 50% 8% 8%;
 }
 
 .btn:hover {
-  background-color: #0056b3;
+  background-color: #4f09f1;
+  transform: translateY(-5px) rotateY(10deg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
 }
 
 .cake-catalog {
@@ -122,11 +139,11 @@ main {
   justify-content: center;
 }
 
-/* Add 3D effect and shadow background to cake */
+/* Cake Styles */
 .cake {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px;
   transition: all 0.3s ease;
@@ -136,69 +153,45 @@ main {
 .cake::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
   z-index: 1;
   border-radius: 10px;
 }
 
 .cake:hover {
-  transform: translateY(-5px) rotateY(10deg); /* Add movement and rotation on hover */
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4); /* Enhance shadow */
-}
-
-/* Add animations */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  transform: translateY(-5px) rotateY(10deg);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
 }
 
 .cake img {
-  width: 100%;
-  border-radius: 5px;
-  z-index: 2;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .cake h3 {
   margin-top: 15px;
-  z-index: 2;
-  animation: fadeIn 1s ease; /* Add fadeIn animation */
+  animation: fadeIn 1s ease;
 }
 
 .cake p {
   font-size: 14px;
   margin-bottom: 10px;
-  z-index: 2;
 }
 
 .cake button {
-  background-color: #f44336;
+  background-color: #f31202;
   color: #fff;
-  border: none;
+  border: #333;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  z-index: 2;
 }
 
 .cake button:hover {
-  background-color: #d32f2f;
-}
-
-/* Make the layout responsive */
-@media (max-width: 768px) {
-  .cake {
-    width: calc(50% - 40px); /* Display 2 cakes per row on smaller screens */
-    margin: 20px;
-  }
+  background-color: #1b1919;
 }
 
 /* Footer Styles */
@@ -209,43 +202,25 @@ main {
   padding: 20px;
   margin-top: 50px;
 }
-/* Add styles for About Us Section */
-.about-us {
-  padding: 50px 0;
-  text-align: center;
-}
 
-.about-us h2 {
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.about-us p {
-  color: #555;
-  margin-bottom: 30px;
-  font-size: 16px;
-}
-
-/* Add animations for About Us Section */
-.about-us {
-  animation: fadeInUp 1s ease;
-}
-
-/* Add styles for Contact Us Section */
+/* About Us and Contact Us Sections */
+.about-us,
 .details {
   padding: 50px 0;
   text-align: center;
 }
 
+.about-us h2,
 .details h2 {
   color: #333;
   margin-bottom: 20px;
   font-size: 28px;
 }
 
+.about-us p,
 .details form {
-  margin-top: 30px;
+  color: #555;
+  margin-bottom: 30px;
 }
 
 .details input,
@@ -271,190 +246,7 @@ main {
   background-color: #0056b3;
 }
 
-/* Add animations for Contact Us Section */
-.details {
-  animation: fadeInUp 1s ease;
-}
-
-/* Define fadeInUp animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-/* App.css */
-
-/* Reset default margin and padding */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Global Styles */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-}
-
-.App {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Header Styles */
-.header {
-  background-color: #f8f9fa;
-  padding: 20px;
-  text-align: center;
-}
-
-.header h1 {
-  color: #333;
-  margin-bottom: 10px;
-}
-
-h2 {
-  text-align: center;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-group {
-  margin-bottom: 15px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  transition: border-color 0.3s ease;
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus {
-  border-color: #007bff; /* Change border color on focus */
-}
-
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color: #0056b3; /* Change background color on hover */
-}
-
-nav ul {
-  list-style-type: none;
-}
-
-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #555;
-}
-
-/* Main Content Styles */
-main {
-  padding: 20px 0;
-}
-
-.hero {
-  background-color: #f8f9fa;
-  padding: 50px;
-  text-align: center;
-}
-
-.hero h2 {
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.hero p {
-  color: #555;
-  margin-bottom: 30px;
-}
-
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #0056b3;
-}
-
-.cake-catalog {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.cake-listing {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-/* Add 3D effect and shadow background to cake */
-.cake {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
-  transition: all 0.3s ease;
-  position: relative;
-}
-
-.cake::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
-  z-index: 1;
-  border-radius: 10px;
-}
-
-.cake:hover {
-  transform: translateY(-5px) rotateY(10deg); /* Add movement and rotation on hover */
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4); /* Enhance shadow */
-}
-
-/* Add animations */
+/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -464,130 +256,61 @@ main {
   }
 }
 
-.cake img {
-  width: 100%;
-  border-radius: 5px;
-  z-index: 2;
-}
-
-.cake h3 {
-  margin-top: 15px;
-  z-index: 2;
-  animation: fadeIn 1s ease; /* Add fadeIn animation */
-}
-
-.cake p {
-  font-size: 14px;
-  margin-bottom: 10px;
-  z-index: 2;
-}
-
-.cake button {
-  background-color: #f44336;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  z-index: 2;
-}
-
-.cake button:hover {
-  background-color: #d32f2f;
-}
-
-/* Make the layout responsive */
+/* Media Queries for Android and Small Screens */
 @media (max-width: 768px) {
+  .CompanyName {
+    font-size: 200%;
+  }
+
+  .navigation ul {
+    padding-left: 30%;
+    justify-content: right;
+  }
+
+  .navigation ul li {
+    margin: 1px;
+    padding: 2%;
+  }
+
   .cake {
     width: calc(50% - 40px); /* Display 2 cakes per row on smaller screens */
-    margin: 20px;
   }
-}
 
-/* Footer Styles */
-.footer {
-  background-color: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
-/* Add styles for About Us Section */
-.about-us {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.about-us h2 {
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.about-us p {
-  color: #555;
-  margin-bottom: 30px;
-  font-size: 16px;
-}
-
-/* Add animations for About Us Section */
-.about-us {
-  animation: fadeInUp 1s ease;
-}
-
-/* Add styles for Contact Us Section */
-.details {
-  padding: 50px 0;
-  text-align: center;
-}
-
-.details h2 {
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 28px;
-}
-
-.details form {
-  margin-top: 30px;
-}
-
-.details input,
-.details textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-.details button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.details button:hover {
-  background-color: #0056b3;
-}
-
-/* Add animations for Contact Us Section */
-.details {
-  animation: fadeInUp 1s ease;
-}
-
-/* Define fadeInUp animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+  .hero h1 {
+    font-size: 150%;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .hero p {
+    font-size: 90%;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
+
+  .details input,
+  .details textarea {
+    width: 90%;
+    margin: 0 auto 20px;
+  }
+
+  .about-us h2,
+  .details h2 {
+    font-size: 24px;
+  }
+
+  .about-us p,
+  .details form {
+    font-size: 14px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .scrolling-text {
+    left: 10%;
+    right: 10%;
+    top: 20%;
   }
 }
