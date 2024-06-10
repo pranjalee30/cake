@@ -1,38 +1,593 @@
+/* App.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+.CompanyName {
+  padding: 0px;
+  display: flex;
+  font-size: 40px;
+}
+
 .App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  padding: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header h1 {
+  color: #050000;
+  margin-bottom: 20px;
+}
+.navigation {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+  flex-direction: row;
+  justify-content: end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.list {
+  font-size: 25px;
+  display: flex;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+}
+.scrolling-text {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main Content Styles */
+main {
+  padding: 20px 0;
+}
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.cake-catalog {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cake-listing {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Add 3D effect and shadow background to cake */
+.cake {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: all 0.3s ease;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
+.cake::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.cake:hover {
+  transform: translateY(-5px) rotateY(10deg); /* Add movement and rotation on hover */
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4); /* Enhance shadow */
+}
+
+/* Add animations */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
+  }
+}
+
+.cake img {
+  width: 100%;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.cake h3 {
+  margin-top: 15px;
+  z-index: 2;
+  animation: fadeIn 1s ease; /* Add fadeIn animation */
+}
+
+.cake p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.cake button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.cake button:hover {
+  background-color: #d32f2f;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+  .cake {
+    width: calc(50% - 40px); /* Display 2 cakes per row on smaller screens */
+    margin: 20px;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+/* Add styles for About Us Section */
+.about-us {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-us h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.about-us p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* Add animations for About Us Section */
+.about-us {
+  animation: fadeInUp 1s ease;
+}
+
+/* Add styles for Contact Us Section */
+.details {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.details h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.details form {
+  margin-top: 30px;
+}
+
+.details input,
+.details textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.details button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details button:hover {
+  background-color: #0056b3;
+}
+
+/* Add animations for Contact Us Section */
+.details {
+  animation: fadeInUp 1s ease;
+}
+
+/* Define fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* App.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #007bff; /* Change border color on focus */
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #555;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px 0;
+}
+
+.hero {
+  background-color: #f8f9fa;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.cake-catalog {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cake-listing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Add 3D effect and shadow background to cake */
+.cake {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.cake::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.cake:hover {
+  transform: translateY(-5px) rotateY(10deg); /* Add movement and rotation on hover */
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4); /* Enhance shadow */
+}
+
+/* Add animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.cake img {
+  width: 100%;
+  border-radius: 5px;
+  z-index: 2;
+}
+
+.cake h3 {
+  margin-top: 15px;
+  z-index: 2;
+  animation: fadeIn 1s ease; /* Add fadeIn animation */
+}
+
+.cake p {
+  font-size: 14px;
+  margin-bottom: 10px;
+  z-index: 2;
+}
+
+.cake button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.cake button:hover {
+  background-color: #d32f2f;
+}
+
+/* Make the layout responsive */
+@media (max-width: 768px) {
+  .cake {
+    width: calc(50% - 40px); /* Display 2 cakes per row on smaller screens */
+    margin: 20px;
+  }
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+/* Add styles for About Us Section */
+.about-us {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.about-us h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.about-us p {
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* Add animations for About Us Section */
+.about-us {
+  animation: fadeInUp 1s ease;
+}
+
+/* Add styles for Contact Us Section */
+.details {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.details h2 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.details form {
+  margin-top: 30px;
+}
+
+.details input,
+.details textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.details button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.details button:hover {
+  background-color: #0056b3;
+}
+
+/* Add animations for Contact Us Section */
+.details {
+  animation: fadeInUp 1s ease;
+}
+
+/* Define fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
