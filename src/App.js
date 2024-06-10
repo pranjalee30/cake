@@ -11,7 +11,9 @@ function App() {
         </div>
         {/* Navigation Menu */}
         <nav className="navigation">
-          <h1 className="CompanyName">Cake Creations</h1>
+          <a href="/">
+            <h1 className="CompanyName">Cake Creations</h1>
+          </a>
           <ul className="list">
             <li>
               <a href="#home">Home</a>
@@ -78,122 +80,108 @@ function App() {
             {/* Cake 3 */}
             <div className="cake">
               <img src="images/3.jpeg" alt="Cake 3" />
-              <h3>Vanilla Dream</h3>
-              <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
-              </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <h3>Chocolate Indulgence</h3>
+              <p>Decadent cake with rich ganache, satisfying cravings</p>
+              <p>Flavor: Chocolate</p>
+              <p>Price: $25</p>
               <button>Add to Cart</button>
             </div>
 
             {/* Cake 4 */}
             <div className="cake">
               <img src="images/4.jpeg" alt="Cake 4" />
-              <h3>Vanilla Dream</h3>
+              <h3>Red Velvet Delight</h3>
               <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
+                Smooth cake with cream cheese frosting, delights taste buds.
               </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <p>Flavor: Red Velvet</p>
+              <p>Price: $30</p>
               <button>Add to Cart</button>
             </div>
             {/* Cake 5 */}
             <div className="cake">
               <img src="images/5.jpeg" alt="Cake 5" />
-              <h3>Vanilla Dream</h3>
+              <h3>Lemon Zest Sensation</h3>
               <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
+                Refreshing cake with tangy curd filling, burst of citrus flavor.
               </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <p>Flavor: Lemon</p>
+              <p>Price: $28</p>
               <button>Add to Cart</button>
             </div>
             {/* Cake 6 */}
             <div className="cake">
               <img src="images/6.jpeg" alt="Cake 6" />
-              <h3>Vanilla Dream</h3>
-              <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
-              </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <h3>Carrot Crunch Cake</h3>
+              <p>Moist cake with walnuts, topped with cream cheese frosting.</p>
+              <p>Flavor: Carrot</p>
+              <p>Price: $32</p>
               <button>Add to Cart</button>
             </div>
             {/* Cake 7 */}
             <div className="cake">
               <img src="images/7.jpeg" alt="Cake 7" />
-              <h3>Vanilla Dream</h3>
+              <h3>Strawberry Bliss</h3>
               <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
+                Delightful cake bursting with fresh strawberries, perfect for
+                summer.
               </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <p>Flavor: Strawberry</p>
+              <p>Price: $26</p>
               <button>Add to Cart</button>
             </div>
             {/* Cake 8 */}
             <div className="cake">
               <img src="images/8.jpeg" alt="Cake 8" />
-              <h3>Vanilla Dream</h3>
+              <h3>Coconut Dream Cake</h3>
               <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
+                Tropical cake with coconut cream layers, transports to paradise.
               </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <p>Flavor: Coconut</p>
+              <p>Price: $27</p>
               <button>Add to Cart</button>
             </div>
             {/* Cake 9 */}
             <div className="cake">
               <img src="images/9.jpeg" alt="Cake 9" />
-              <h3>Vanilla Dream</h3>
-              <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
-              </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <h3>Coffee Caramel Indulgence</h3>
+              <p>Rich coffee cake with caramel layers, heavenly treat.</p>
+              <p>Flavor: Coffee</p>
+              <p>Price: $29</p>
               <button>Add to Cart</button>
             </div>
             {/* Cake 10 */}
             <div className="cake">
               <img src="images/10.jpeg" alt="Cake 10" />
-              <h3>Vanilla Dream</h3>
+              <h3>Banana Nut Delight</h3>
               <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
+                Moist banana cake with creamy frosting, comforting dessert
+                choice.
               </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <p>Flavor: Banana</p>
+              <p>Price: $31</p>
               <button>Add to Cart</button>
             </div>
             {/* Cake 11 */}
             <div className="cake">
               <img src="images/11.jpeg" alt="Cake 11" />
-              <h3>Vanilla Dream</h3>
+              <h3>Raspberry White Chocolate</h3>
               <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
+                Delicate cake with tangy preserves, covered in white chocolate.
               </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <p>Flavor: White Chocolate</p>
+              <p>Price: $33</p>
               <button>Add to Cart</button>
             </div>
             {/* Cake 12 */}
             <div className="cake">
               <img src="images/12.jpeg" alt="Cake 12" />
-              <h3>Vanilla Dream</h3>
+              <h3>Pineapple Upside-Down Cake</h3>
               <p>
-                A classic vanilla cake with vanilla buttercream frosting, ideal
-                for any celebration.
+                Classic cake with caramelized pineapple, moist vanilla sponge.
               </p>
-              <p>Flavor: Vanilla</p>
-              <p>Price: $20</p>
+              <p>Flavor: Pineapple</p>
+              <p>Price: $28</p>
               <button>Add to Cart</button>
             </div>
           </div>

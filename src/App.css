@@ -8,13 +8,16 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 100px 20px 20px 50px;
+  margin: 0px 20px 20px 20px;
 }
 
 .CompanyName {
   display: flex;
   font-size: 150%;
   padding-right: 30px;
+}
+a {
+  text-decoration: none;
 }
 
 .App {
@@ -46,8 +49,9 @@ body {
   list-style-type: none;
   display: flex;
   flex-direction: row;
-  padding-left: 50%;
+  padding-left: 48%;
   font-size: 120%;
+  font-weight: bold;
 }
 
 .navigation ul li {
@@ -66,7 +70,7 @@ body {
   color: rgb(57, 34, 4);
   left: 35%;
   right: 35%;
-  top: 20%;
+  top: 5%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
   overflow: hidden;
@@ -102,31 +106,9 @@ main {
 .hero p {
   color: #555;
   margin-bottom: 30px;
+  align-items: center;
 }
 
-/* .btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border: none;
-  border-radius: 50% 50% 9% 9%;
-  transition: background-color 0.4s ease;
-}
-
-.btn::before {
-  content: "";
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
-  z-index: 1;
-  border-radius: 50% 50% 8% 8%;
-}
-
-.btn:hover {
-  background-color: #4f09f1;
-  transform: translateY(-5px) rotateY(10deg);
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-} */
 .btn {
   display: inline-block;
   padding: 12px 24px;
@@ -162,6 +144,7 @@ main {
 
 /* Cake Styles */
 .cake {
+  width: 30%;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -284,12 +267,14 @@ main {
 /* Media Queries for Android and Small Screens */
 @media (max-width: 768px) {
   .CompanyName {
-    font-size: 200%;
+    display: flex;
+    font-size: 150%;
+    padding-right: 30px;
   }
 
   .navigation ul {
-    padding-left: 30%;
-    justify-content: right;
+    padding-left: 10%;
+    justify-content: flex-end;
   }
 
   .navigation ul li {
@@ -334,8 +319,9 @@ main {
   }
 
   .scrolling-text {
-    left: 10%;
-    right: 10%;
-    top: 20%;
+    left: 35%;
+    right: 35%;
+    top: 18%;
+    font-size: 11px;
   }
 }
