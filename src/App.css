@@ -104,7 +104,7 @@ main {
   margin-bottom: 30px;
 }
 
-.btn {
+/* .btn {
   display: inline-block;
   padding: 10px 20px;
   background-color: #007bff;
@@ -126,8 +126,29 @@ main {
   background-color: #4f09f1;
   transform: translateY(-5px) rotateY(10deg);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+} */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background: linear-gradient(45deg, #823c3c, #ff4500);
+  border: none;
+  border-radius: 30px 0px 30px 0px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+.btn:hover {
+  background: linear-gradient(45deg, #ff4500, #823c3c);
+  transform: translateY(-2px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
 .cake-catalog {
   padding: 50px 0;
   text-align: center;
@@ -185,13 +206,17 @@ main {
   color: #fff;
   border: #333;
   padding: 10px 20px;
-  border-radius: 5px;
+  background: linear-gradient(45deg, #823c3c, #ff4500);
+  border: none;
+  border-radius: 80px 0px 80px 0px;
   cursor: pointer;
+  text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 .cake button:hover {
-  background-color: #1b1919;
+  background: linear-gradient(45deg, #ff4500, #823c3c);
+  transform: translateY(-2px);
 }
 
 /* Footer Styles */
