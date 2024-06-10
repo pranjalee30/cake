@@ -268,7 +268,7 @@ main {
 @media (max-width: 768px) {
   .CompanyName {
     display: flex;
-    font-size: 150%;
+    font-size: 100%;
     padding-right: 30px;
   }
 
@@ -278,14 +278,20 @@ main {
   }
 
   .navigation ul li {
-    margin: 1px;
+    margin: 3px;
     padding: 2%;
+    font-size: 60%;
   }
 
   .cake {
     width: calc(50% - 40px); /* Display 2 cakes per row on smaller screens */
   }
-
+  .cake img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
   .hero h1 {
     font-size: 150%;
   }
