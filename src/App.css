@@ -1,3 +1,21 @@
+.light-theme {
+  --bg-color: white;
+  --text-color: #0a2d5cb7;
+}
+
+.dark-theme {
+  --bg-color: #575858;
+  --text-color: #0a2d5cb7;
+}
+
+.App {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Add your other CSS rules here */
+
 /* Reset default margin and padding */
 * {
   margin: 0;
@@ -8,48 +26,49 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  margin: 0px 20px 20px 20px;
+  color: var(--text-color);
 }
 
 .CompanyName {
   display: flex;
-  font-size: 150%;
-  padding-right: 30px;
+  font-size: 130%;
+  padding-right: 2%;
 }
 a {
   text-decoration: none;
 }
 
 .App {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2%;
 }
 
 /* Header Styles */
 .header {
-  padding: 10px;
+  padding: 2%;
   text-align: center;
   box-sizing: border-box;
 }
 
 .header h1 {
-  color: #050000;
-  margin-bottom: 20px;
+  color: var(--text-color);
+  margin-bottom: 5%;
 }
 
 .navigation {
   display: flex;
   justify-content: row;
-  background-color: #f8f9fa;
+  background-color: #f4dfa1;
   padding: 3%;
+  border-radius: 0.625em;
 }
 
 .navigation ul {
   list-style-type: none;
   display: flex;
-  flex-direction: row;
-  padding-left: 48%;
+  align-items: center;
+  padding-left: 40%;
   font-size: 120%;
   font-weight: bold;
 }
@@ -57,24 +76,24 @@ a {
 .navigation ul li {
   margin-right: 2%;
   padding: 3%;
+  cursor: pointer;
 }
 
 .navigation ul li a {
   text-decoration: none;
-  color: #555;
+  color: var(--text-color);
 }
 
 /* Scrolling Text */
 .scrolling-text {
   position: absolute;
   color: rgb(57, 34, 4);
-  left: 35%;
-  right: 35%;
-  top: 5%;
+  left: 37%;
+  right: 37%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
   overflow: hidden;
-  animation: scrollText 10s linear infinite;
+  animation: scrollText 12s linear infinite;
 }
 
 @keyframes scrollText {
@@ -92,47 +111,49 @@ main {
 }
 
 .hero {
-  background-color: #f8f9fa;
-  padding: 10px;
+  background-color: #f4dfa1;
+  padding: 2%;
   text-align: center;
+  border-radius: 0.625em;
 }
 
 .hero h1 {
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 200%;
+  color: #0a2d5cb7;
+  margin-bottom: 2%;
+  font-size: 2rem;
 }
 
 .hero p {
-  color: #555;
-  margin-bottom: 30px;
+  color: #0a2d5cb7;
+  margin-bottom: 3%;
   align-items: center;
 }
 
 .btn {
   display: inline-block;
-  padding: 12px 24px;
-  font-size: 16px;
+  padding: 1em 2em;
+  font-size: 1rem;
   color: white;
   background: linear-gradient(45deg, #823c3c, #ff4500);
   border: none;
-  border-radius: 30px 0px 30px 0px;
+  border-radius: 2em 0 2em 0;
   cursor: pointer;
   text-decoration: none;
   transition: 0.3s ease, transform 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.25em 1em rgba(0, 0, 0, 0.2);
 }
 
 .btn:hover {
   background: linear-gradient(45deg, #ff4500, #823c3c);
-  transform: translateY(-2px);
+  transform: translateY(-0.125em);
 }
 
 .btn:active {
   transform: translateY(0);
 }
+
 .cake-catalog {
-  padding: 50px 0;
+  padding: 5% 0;
   text-align: center;
 }
 
@@ -145,11 +166,11 @@ main {
 /* Cake Styles */
 .cake {
   width: 30%;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin: 20px;
+  background-color: #f4dfa1;
+  border-radius: 0.625em;
+  box-shadow: 0 0 1.25em rgba(0, 0, 0, 0.1);
+  padding: 2%;
+  margin: 2%;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -157,41 +178,45 @@ main {
 .cake::before {
   content: "";
   position: absolute;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0) 0%,
+    #f4dfa1 100%
+  );
   z-index: 1;
-  border-radius: 10px;
+  border-radius: 0.625em;
 }
 
 .cake:hover {
-  transform: translateY(-5px) rotateY(10deg);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  transform: translateY(-0.3125em) rotateY(10deg);
+  box-shadow: 0 0 1.875em rgba(0, 0, 0, 0.4);
 }
 
 .cake img {
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 0.5em;
 }
 
 .cake h3 {
-  margin-top: 15px;
+  margin-top: 1.5em;
   animation: fadeIn 1s ease;
 }
 
 .cake p {
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 0.875rem;
+  margin-bottom: 1em;
 }
 
 .cake button {
   background-color: #f31202;
   color: #fff;
   border: #333;
-  padding: 10px 20px;
+  padding: 0.5em 1em;
   background: linear-gradient(45deg, #823c3c, #ff4500);
   border: none;
-  border-radius: 80px 0px 80px 0px;
+  border-radius: 5em 0 5em 0;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s ease;
@@ -199,59 +224,109 @@ main {
 
 .cake button:hover {
   background: linear-gradient(45deg, #ff4500, #823c3c);
-  transform: translateY(-2px);
+  transform: translateY(-0.125em);
 }
 
 /* Footer Styles */
 .footer {
   background-color: #333;
-  color: #fff;
+  color: #f4dfa1;
   text-align: center;
-  padding: 20px;
-  margin-top: 50px;
+  padding: 4%;
+  margin-top: 5%;
+  border-radius: 0.625em;
 }
 
 /* About Us and Contact Us Sections */
 .about-us,
 .details {
-  padding: 50px 0;
+  padding: 5% 5% 5% 5%;
   text-align: center;
 }
 
 .about-us h2,
 .details h2 {
-  color: #333;
-  margin-bottom: 20px;
-  font-size: 28px;
+  color: var(--text-color);
+  margin-bottom: 2%;
+  font-size: 1.75rem;
 }
 
 .about-us p,
 .details form {
-  color: #555;
-  margin-bottom: 30px;
+  color: var(--text-color);
+  margin-bottom: 3%;
+  margin-left: 3% !important;
 }
 
 .details input,
 .details textarea {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  padding: 1em;
+  margin-bottom: 2%;
+  border-radius: 0.3125em;
   border: 1px solid #ccc;
 }
 
-.details button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+/* Reset some basic styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
 
-.details button:hover {
-  background-color: #0056b3;
+/* Base styles for the button */
+.stylish-button {
+  background: linear-gradient(45deg, #6a5acd, #00ced1);
+  border: none;
+  border-radius: 50px;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Hover effect */
+.stylish-button:hover {
+  background: linear-gradient(45deg, #00ced1, #6a5acd);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Active state effect */
+.stylish-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Pseudo-element for the ripple effect */
+.stylish-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: all 0.6s ease-out;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  pointer-events: none;
+}
+
+.stylish-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
 }
 
 /* Animations */
@@ -263,51 +338,88 @@ main {
     opacity: 1;
   }
 }
-
-/* Media Queries for Android and Small Screens */
-@media (max-width: 768px) {
+/* Media Queries for Android and Small Screens*/
+@media only screen and (min-width: 481px) and (max-width: 767px) {
   .CompanyName {
-    display: flex;
-    font-size: 100%;
-    padding-right: 30px;
+    font-size: 90% !important;
+    padding-right: 15px;
+  }
+
+  .App {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .header {
+    padding: 8px;
+  }
+
+  .header h1 {
+    font-size: 180%;
+  }
+
+  .navigation {
+    padding: 2%;
   }
 
   .navigation ul {
-    padding-left: 10%;
-    justify-content: flex-end;
+    padding-left: 30px;
+    font-size: 80%;
   }
 
   .navigation ul li {
-    margin: 3px;
+    margin-right: 1%;
     padding: 2%;
-    font-size: 60%;
   }
 
-  .cake {
-    width: calc(50% - 40px); /* Display 2 cakes per row on smaller screens */
+  .scrolling-text {
+    left: 38%;
+    right: 38%;
+    font-size: 8px;
   }
-  .cake img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    border-radius: 4px;
+
+  main {
+    padding: 8px;
   }
+
+  .hero {
+    padding: 8px;
+  }
+
   .hero h1 {
-    font-size: 150%;
-  }
-
-  .hero p {
-    font-size: 90%;
+    font-size: 180%;
   }
 
   .btn {
-    padding: 8px 16px;
+    padding: 10px 20px;
+    font-size: 14px;
   }
 
-  .details input,
-  .details textarea {
-    width: 90%;
-    margin: 0 auto 20px;
+  .cake-catalog {
+    padding: 30px 0;
+  }
+
+  .cake-listing {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cake {
+    width: 80%;
+    margin: 15px;
+  }
+
+  .cake img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    padding: 15px;
+  }
+  .about-us,
+  .details {
+    padding: 20px 20px 20px 20px;
   }
 
   .about-us h2,
@@ -315,19 +427,61 @@ main {
     font-size: 24px;
   }
 
-  .about-us p,
-  .details form {
-    font-size: 14px;
+  .details input,
+  .details textarea {
+    padding: 8px;
   }
 
-  .footer {
-    padding: 10px;
+  .details button {
+    padding: 8px 15px;
   }
+}
 
-  .scrolling-text {
-    left: 35%;
-    right: 35%;
-    top: 18%;
-    font-size: 11px;
-  }
+/* Media Queries for Android Phones */
+@media only screen and (max-width: 480px) {
+  /* Your styles for smaller Android phones */
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Your styles for larger Android phones (e.g., tablets in portrait mode) */
+}
+/* Media Queries for iOS Phones */
+@media only screen and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) {
+  /* Your styles for iPhone 4 and 4S */
+}
+
+@media only screen and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) {
+  /* Your styles for iPhone 5, 5C, and 5S */
+}
+
+@media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 2) {
+  /* Your styles for iPhone 6, 6S, 7, 8 */
+}
+
+@media only screen and (max-device-width: 667px) and (-webkit-device-pixel-ratio: 3) {
+  /* Your styles for iPhone 6 Plus, 6S Plus, 7 Plus, 8 Plus */
+}
+
+@media only screen and (max-device-width: 736px) and (-webkit-device-pixel-ratio: 3) {
+  /* Your styles for iPhone X, XS, 11 Pro */
+}
+
+@media only screen and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) {
+  /* Your styles for iPhone XR, 11 */
+}
+
+@media only screen and (max-device-width: 896px) and (-webkit-device-pixel-ratio: 2) {
+  /* Your styles for iPhone XS Max, 11 Pro Max */
+}
+
+@media only screen and (max-device-width: 926px) and (-webkit-device-pixel-ratio: 2) {
+  /* Your styles for iPhone 12 Mini */
+}
+
+@media only screen and (max-device-width: 844px) and (-webkit-device-pixel-ratio: 2) {
+  /* Your styles for iPhone 12, 12 Pro */
+}
+
+@media only screen and (max-device-width: 926px) and (-webkit-device-pixel-ratio: 3) {
+  /* Your styles for iPhone 12 Pro Max */
 }
