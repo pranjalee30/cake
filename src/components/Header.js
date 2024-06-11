@@ -1,15 +1,12 @@
 import React from "react";
 
-function Header() {
+function Header({ toggleTheme, darkTheme }) {
   return (
     /* Header Section */
-    <header className="header">
-      <div className="scrolling-text">
-        <div>Welcome to Cake Creations!</div>
-      </div>
+    <section className="header">
       {/* Navigation Menu */}
       <nav className="navigation">
-        <a href="/">
+        <a href="/cake">
           <h1 className="CompanyName">Cake Creations</h1>
         </a>
         <ul className="list">
@@ -20,7 +17,7 @@ function Header() {
             <a href="#cakes">Cakes</a>
           </li>
           <li>
-            <a href="#aboutus">About</a>
+            <a href="#about">About</a>
           </li>
           <li>
             <a href="#contact">Contact</a>
@@ -28,9 +25,13 @@ function Header() {
           <li>
             <a href="#login">Login</a>
           </li>
+          <li>
+            <a onClick={toggleTheme}>{darkTheme ? "🌞" : "🌚"}</a>
+          </li>
         </ul>
       </nav>
-    </header>
+    </section>
   );
 }
+
 export default Header;
