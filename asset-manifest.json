@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cake/static/css/main.fbd09c97.css",
+    "main.css": "/cake/static/css/main.c9b680d6.css",
     "main.js": "/cake/static/js/main.487ab522.js",
     "static/js/453.d13b3b08.chunk.js": "/cake/static/js/453.d13b3b08.chunk.js",
     "index.html": "/cake/index.html",
-    "main.fbd09c97.css.map": "/cake/static/css/main.fbd09c97.css.map",
+    "main.c9b680d6.css.map": "/cake/static/css/main.c9b680d6.css.map",
     "main.487ab522.js.map": "/cake/static/js/main.487ab522.js.map",
     "453.d13b3b08.chunk.js.map": "/cake/static/js/453.d13b3b08.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbd09c97.css",
+    "static/css/main.c9b680d6.css",
     "static/js/main.487ab522.js"
   ]
 }
