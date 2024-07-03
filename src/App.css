@@ -14,8 +14,6 @@
   transition: background-color 0.3s, color 0.3s;
 }
 
-/* Add your other CSS rules here */
-
 /* Reset default margin and padding */
 * {
   margin: 0;
@@ -31,8 +29,10 @@ body {
 
 .CompanyName {
   display: flex;
-  font-size: 130%;
-  padding-right: 2%;
+  justify-content: flex-start;
+  font-size: 140%;
+  padding-left: 10%;
+  color: var(--text-color);
 }
 a {
   text-decoration: none;
@@ -45,37 +45,27 @@ a {
 }
 
 /* Header Styles */
-.header {
-  padding: 2%;
-  text-align: center;
-  box-sizing: border-box;
-}
-
-.header h1 {
-  color: var(--text-color);
-  margin-bottom: 5%;
-}
-
 .navigation {
   display: flex;
-  justify-content: row;
+  align-items: flex-start;
   background-color: #f4dfa1;
-  padding: 3%;
+  box-sizing: border-box;
   border-radius: 0.625em;
+  padding-top: 2%;
+  gap: 70%;
 }
 
 .navigation ul {
   list-style-type: none;
   display: flex;
-  align-items: center;
-  padding-left: 40%;
-  font-size: 120%;
+  justify-content: flex-end;
+  font-size: 100%;
   font-weight: bold;
 }
 
 .navigation ul li {
   margin-right: 2%;
-  padding: 3%;
+  padding: 2%;
   cursor: pointer;
 }
 
@@ -88,8 +78,8 @@ a {
 .scrolling-text {
   position: absolute;
   color: rgb(57, 34, 4);
-  left: 37%;
-  right: 37%;
+  left: 40%;
+  right: 40%;
   transform: translate(-50%, -50%);
   white-space: nowrap;
   overflow: hidden;
@@ -133,7 +123,7 @@ main {
   display: inline-block;
   padding: 1em 2em;
   font-size: 1rem;
-  color: white;
+  color: #f4dfa1;
   background: linear-gradient(45deg, #823c3c, #ff4500);
   border: none;
   border-radius: 2em 0 2em 0;
@@ -160,17 +150,19 @@ main {
 .cake-listing {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 /* Cake Styles */
 .cake {
-  width: 30%;
+  width: 20%;
+  height: auto;
   background-color: #f4dfa1;
   border-radius: 0.625em;
   box-shadow: 0 0 1.25em rgba(0, 0, 0, 0.1);
   padding: 2%;
-  margin: 2%;
+  margin: 5%;
   transition: all 0.3s ease;
   position: relative;
 }
@@ -193,7 +185,7 @@ main {
 }
 
 .cake img {
-  width: 100%;
+  width: 50%;
   height: auto;
   object-fit: cover;
   border-radius: 0.5em;
@@ -211,7 +203,7 @@ main {
 
 .cake button {
   background-color: #f31202;
-  color: #fff;
+  color: #f4dfa1;
   border: #333;
   padding: 0.5em 1em;
   background: linear-gradient(45deg, #823c3c, #ff4500);
@@ -249,8 +241,16 @@ main {
   color: var(--text-color);
   margin-bottom: 2%;
   font-size: 1.75rem;
+  align-items: center;
 }
-
+.details label h4 {
+  color: var(--text-color);
+  margin-bottom: 1%;
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: block;
+  text-align: left;
+}
 .about-us p,
 .details form {
   color: var(--text-color);
@@ -266,67 +266,28 @@ main {
   border-radius: 0.3125em;
   border: 1px solid #ccc;
 }
-
-/* Reset some basic styles */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-  background: #f0f0f0;
-  font-family: Arial, sans-serif;
-}
-
-/* Base styles for the button */
-.stylish-button {
-  background: linear-gradient(45deg, #6a5acd, #00ced1);
+.details button {
+  background-color: #f31202;
+  color: #f4dfa1;
+  border: #333;
+  padding: 1em 1em;
+  background: linear-gradient(45deg, #823c3c, #ff4500);
   border: none;
-  border-radius: 50px;
-  color: white;
-  padding: 15px 30px;
-  font-size: 1rem;
-  font-weight: bold;
+  border-radius: 0 3em 0 3em;
   cursor: pointer;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease;
-  position: relative;
-  overflow: hidden;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
 
-/* Hover effect */
-.stylish-button:hover {
-  background: linear-gradient(45deg, #00ced1, #6a5acd);
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
-  transform: translateY(-2px);
+.details button:hover {
+  background: linear-gradient(45deg, #ff4500, #823c3c);
+  transform: translateY(-0.125em);
 }
 
-/* Active state effect */
-.stylish-button:active {
-  transform: translateY(2px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Pseudo-element for the ripple effect */
-.stylish-button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 300%;
-  height: 300%;
-  background: rgba(255, 255, 255, 0.1);
-  transition: all 0.6s ease-out;
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  pointer-events: none;
-}
-
-.stylish-button:hover::before {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 0;
+.details p {
+  animation: fadeIn 0.5s ease-in-out;
+  color: var(--text-color);
+  margin-top: 2%;
 }
 
 /* Animations */
@@ -341,105 +302,183 @@ body {
 /* Media Queries for Android and Small Screens*/
 @media only screen and (min-width: 481px) and (max-width: 767px) {
   .CompanyName {
-    font-size: 90% !important;
-    padding-right: 15px;
+    font-size: 90%;
+    padding-right: 15%;
   }
 
   .App {
     max-width: 90%;
-    padding: 15px;
+    padding: 5%;
   }
-
-  .header {
-    padding: 8px;
-  }
-
-  .header h1 {
-    font-size: 180%;
-  }
-
   .navigation {
-    padding: 2%;
+    padding-top: 2%;
+    gap: 55%;
   }
 
   .navigation ul {
-    padding-left: 30px;
-    font-size: 80%;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 60%;
   }
 
   .navigation ul li {
-    margin-right: 1%;
+    margin-right: 2%;
     padding: 2%;
   }
 
   .scrolling-text {
-    left: 38%;
-    right: 38%;
-    font-size: 8px;
+    left: 40%;
+    right: 40%;
+    font-size: 8%;
   }
 
   main {
-    padding: 8px;
+    padding: 4%;
   }
 
   .hero {
-    padding: 8px;
+    padding: 4%;
   }
 
   .hero h1 {
-    font-size: 180%;
+    font-size: 100%;
   }
 
   .btn {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-
-  .cake-catalog {
-    padding: 30px 0;
-  }
-
-  .cake-listing {
-    flex-direction: column;
-    align-items: center;
+    padding: 2% 4%;
+    font-size: 20%;
   }
 
   .cake {
-    width: 80%;
-    margin: 15px;
+    width: 50%;
+    height: auto;
+    margin: 8%;
   }
 
   .cake img {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
-
   .footer {
-    padding: 15px;
+    padding: 3%;
   }
   .about-us,
   .details {
-    padding: 20px 20px 20px 20px;
+    padding: 0% 2% 2% 2%;
+  }
+  .details {
+    margin: 3% 3% 3% 3%;
   }
 
   .about-us h2,
   .details h2 {
-    font-size: 24px;
+    font-size: 120%;
   }
 
   .details input,
   .details textarea {
-    padding: 8px;
+    padding: 3%;
   }
 
   .details button {
-    padding: 8px 15px;
+    padding: 3% 7%;
   }
 }
-
-/* Media Queries for Android Phones */
 @media only screen and (max-width: 480px) {
   /* Your styles for smaller Android phones */
+  .CompanyName {
+    font-size: 80%;
+    padding-left: 5%;
+  }
+
+  .App {
+    max-width: 100%;
+  }
+
+  .navigation {
+    flex-direction: row;
+    padding-top: 3%;
+    gap: 40%;
+  }
+
+  .navigation ul {
+    flex-direction: row;
+    font-size: 60%;
+  }
+
+  .navigation ul li {
+    margin-right: 2%;
+    padding: 2%;
+  }
+
+  .scrolling-text {
+    left: 40%;
+    right: 40%;
+    font-size: 8%;
+  }
+
+  main {
+    padding: 5%;
+  }
+
+  .hero {
+    padding: 5%;
+  }
+
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 3% 6%;
+    font-size: 1rem;
+  }
+
+  .cake {
+    width: 50%;
+    height: auto;
+    margin: 5%;
+  }
+
+  .cake img {
+    width: 50%;
+    height: auto;
+  }
+
+  .footer {
+    padding: 5%;
+  }
+
+  .about-us {
+    padding: 5% 5% 5% 5%;
+  }
+  .details {
+    max-width: 80%;
+    padding: 2% 2% 2% 2%;
+    margin: 2%;
+  }
+
+  .about-us h2,
+  .details h2 {
+    font-size: 1.5rem;
+    align-items: center;
+  }
+
+  .details input,
+  .details textarea {
+    padding: 5%;
+    font-size: 2rem;
+  }
+
+  .details button {
+    padding: 5%;
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
