@@ -1,0 +1,55 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(75deg, #f4eef1, #bb377d);
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+.copyright{
+  color:black;
+}
+
+.icons {
+  display: flex;
+  margin: 20px 0;
+}
+
+.icons li {
+  position: relative;
+  list-style: none;
+  height: 70px;
+  width: 70px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background: #dde1e7;
+  cursor: pointer;
+  box-shadow: -3px -3px 7px #ffffff73,
+              3px 3px 7px rgba(94,104,121,0.288);
+  transition: all 0.3s ease-in-out;
+}
+
+.icons li a {
+  line-height: 70px;
+  font-size: 30px;
+  color: #b6bbc5;
+  transition: color 0.3s ease-in-out;
+  padding-left:23px;
+}
+
+.icons li:hover {
+  box-shadow: inset 3px 3px 5px rgba(94,104,121,0.288),
+              inset -3px -3px 7px #ffffff73;
+}
+
+.icons li:nth-child(1):hover a {
+  color: #1877F2; 
+}
+
+.icons li:nth-child(2):hover a {
+  color: #1DA1F2; 
+}
+
+.icons li:nth-child(3):hover a {
+  color: #E4405F; 
+}

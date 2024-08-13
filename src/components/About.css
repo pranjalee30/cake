@@ -1,0 +1,145 @@
+/* Base Styles */
+.about-section {
+  background: linear-gradient(145deg, #fbd3e9, #bb377d);
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.about-section h2 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  color: #f8b500; 
+
+  margin-bottom: 20px;
+  text-align: center; /* Center the heading */
+}
+
+.about-section p {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center; /* Center the text */
+}
+
+/* Add these styles to About.css */
+
+.contact-button-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  margin-top: 20px; /* Add some space above the button */
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.close-button {
+  background: transparent;
+  color: #bb377d;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.stylish-button {
+  background-color: #f8b500;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.stylish-button:hover {
+  background-color: #bb377d;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .about-section {
+    padding: 30px;
+  }
+
+  .about-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .about-section p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-section {
+    padding: 20px;
+  }
+
+  .about-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .about-section p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .about-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .about-section p {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 10px;
+  }
+
+  .about-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .about-section p {
+    font-size: 0.8rem;
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import './Main.css';
 function Main() {
   return (
     <main>
@@ -17,7 +18,7 @@ function Main() {
         <div className="cake-listing">
           {/* Cake 1 */}
           <div className="cake">
-            <img src="images/1.jpeg" alt="Cake 1" />
+            <img src={`${process.env.PUBLIC_URL}/images/1.jpeg`} alt="Cake 1" />
             <h3>Chocolate Delight</h3>
             <p>
               A rich chocolate cake with layers of chocolate ganache, perfect
@@ -30,7 +31,7 @@ function Main() {
 
           {/* Cake 2 */}
           <div className="cake">
-            <img src="images/2.jpeg" alt="Cake 2" />
+            <img src={`${process.env.PUBLIC_URL}/images/2.jpeg`} alt="Cake 2" />
             <h3>Vanilla Dream</h3>
             <p>
               A classic vanilla cake with vanilla buttercream frosting, ideal
@@ -43,7 +44,7 @@ function Main() {
 
           {/* Cake 3 */}
           <div className="cake">
-            <img src="images/3.jpeg" alt="Cake 3" />
+            <img src={`${process.env.PUBLIC_URL}/images/3.jpeg`} alt="Cake 3" />
             <h3>Chocolate Indulgence</h3>
             <p>Decadent cake with rich ganache, satisfying cravings</p>
             <p>Flavor: Chocolate</p>
@@ -53,7 +54,7 @@ function Main() {
 
           {/* Cake 4 */}
           <div className="cake">
-            <img src="images/4.jpeg" alt="Cake 4" />
+            <img src={`${process.env.PUBLIC_URL}/images/4.jpeg`} alt="Cake 4" />
             <h3>Red Velvet Delight</h3>
             <p>Smooth cake with cream cheese frosting, delights taste buds.</p>
             <p>Flavor: Red Velvet</p>
@@ -62,7 +63,7 @@ function Main() {
           </div>
           {/* Cake 5 */}
           <div className="cake">
-            <img src="images/5.jpeg" alt="Cake 5" />
+            <img src={`${process.env.PUBLIC_URL}/images/5.jpeg`} alt="Cake 5" />
             <h3>Lemon Zest Sensation</h3>
             <p>
               Refreshing cake with tangy curd filling, burst of citrus flavor.
@@ -73,7 +74,7 @@ function Main() {
           </div>
           {/* Cake 6 */}
           <div className="cake">
-            <img src="images/6.jpeg" alt="Cake 6" />
+            <img src={`${process.env.PUBLIC_URL}/images/6.jpeg`} alt="Cake 6" />
             <h3>Carrot Crunch Cake</h3>
             <p>Moist cake with walnuts, topped with cream cheese frosting.</p>
             <p>Flavor: Carrot</p>
@@ -82,7 +83,7 @@ function Main() {
           </div>
           {/* Cake 7 */}
           <div className="cake">
-            <img src="images/7.jpeg" alt="Cake 7" />
+            <img src={`${process.env.PUBLIC_URL}/images/7.jpeg`} alt="Cake 7" />
             <h3>Strawberry Bliss</h3>
             <p>
               Delightful cake bursting with fresh strawberries, perfect for
@@ -94,7 +95,7 @@ function Main() {
           </div>
           {/* Cake 8 */}
           <div className="cake">
-            <img src="images/8.jpeg" alt="Cake 8" />
+            <img src={`${process.env.PUBLIC_URL}/images/8.jpeg`} alt="Cake 8" />
             <h3>Coconut Dream Cake</h3>
             <p>
               Tropical cake with coconut cream layers, transports to paradise.
@@ -105,7 +106,7 @@ function Main() {
           </div>
           {/* Cake 9 */}
           <div className="cake">
-            <img src="images/9.jpeg" alt="Cake 9" />
+            <img src={`${process.env.PUBLIC_URL}/images/9.jpeg`} alt="Cake 9" />
             <h3>Coffee Caramel Indulgence</h3>
             <p>Rich coffee cake with caramel layers, heavenly treat.</p>
             <p>Flavor: Coffee</p>
@@ -114,7 +115,7 @@ function Main() {
           </div>
           {/* Cake 10 */}
           <div className="cake">
-            <img src="images/10.jpeg" alt="Cake 10" />
+            <img src={`${process.env.PUBLIC_URL}/images/10.jpeg`} alt="Cake 10" />
             <h3>Banana Nut Delight</h3>
             <p>
               Moist banana cake with creamy frosting, comforting dessert choice.
@@ -125,7 +126,7 @@ function Main() {
           </div>
           {/* Cake 11 */}
           <div className="cake">
-            <img src="images/11.jpeg" alt="Cake 11" />
+            <img src={`${process.env.PUBLIC_URL}/images/11.jpeg`} alt="Cake 11" />
             <h3>Raspberry White Chocolate</h3>
             <p>
               Delicate cake with tangy preserves, covered in white chocolate.
@@ -136,7 +137,7 @@ function Main() {
           </div>
           {/* Cake 12 */}
           <div className="cake">
-            <img src="images/12.jpeg" alt="Cake 12" />
+            <img src={`${process.env.PUBLIC_URL}/images/12.jpeg`} alt="Cake 12" />
             <h3>Pineapple Upside-Down Cake</h3>
             <p>
               Classic cake with caramelized pineapple, moist vanilla sponge.
