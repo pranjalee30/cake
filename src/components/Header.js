@@ -12,7 +12,7 @@ function Header({ theme, toggleTheme }) {
       <nav className="navigation">
         <a href="/cake">
           <h1 className="company-name">
-            <span role="img" aria-label="cake">🍰</span> Cake Creations
+            <span role="img" aria-label="cake">👨‍🍳</span>Cake Creations
           </h1>
         </a>
         <ul className="list">
