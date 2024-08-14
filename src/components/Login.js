@@ -25,12 +25,12 @@ function Login({ onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = isLogin ? 'http://localhost:5000/login' : 'http://localhost:5000/signup';
+      const url = isLogin ? 'https://cake-cyan.vercel.app/login' : 'https://cake-cyan.vercel.app/signup';
       const response = await axios.post(url, { username, password });
       setMessage(response.data.message);
       if (response.data.status === 'success' && isLogin) {
-        login(username); // Pass the username to the context
-        onClose(); // Close the login modal
+        login(username); 
+        onClose(); 
       }
     } catch (error) {
       console.error("Login error:", error.response ? error.response.data : error.message); // Log detailed error
