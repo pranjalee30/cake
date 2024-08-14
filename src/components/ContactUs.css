@@ -123,7 +123,7 @@ input::placeholder, textarea::placeholder {
 
 textarea {
   resize: none; 
-  height: 100px; 
+  height: 150px; 
 }
 
 .stylish-button {
@@ -179,7 +179,7 @@ textarea {
   }
   
   textarea {
-    height: 90px; 
+    height: 100px; 
   }
 
   .contact-section h2 {
@@ -200,7 +200,7 @@ textarea {
   }
 
   textarea {
-    height: 80px; 
+    height: 100px; 
   }
 
   .contact-section h2 {
@@ -221,7 +221,7 @@ textarea {
   }
 
   textarea {
-    height: 70px; 
+    height: 100px; 
   }
 
   .contact-section h2 {
