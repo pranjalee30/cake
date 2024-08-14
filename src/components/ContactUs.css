@@ -1,5 +1,4 @@
-/* ContactUs.css */
-
+/* Base Styles */
 .open-modal-button {
   background-color: #f8b500;
   color: white;
@@ -10,6 +9,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .open-modal-button:hover {
   background-color: #bb377d; 
   transform: translateY(-3px); 
@@ -32,10 +32,10 @@
 .modal-content {
   background: #fff;
   color: #000;
-  padding: 15px; 
+  padding: 20px; 
   border-radius: 15px; 
-  width: 80%; 
-  height: 80%; 
+  width: 60%; 
+  height: 70%; 
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   display: flex;
@@ -68,7 +68,6 @@
   color: #f8b500;
 }
 
-
 .contact-section {
   display: flex;
   flex-direction: column;
@@ -89,7 +88,7 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 30px; 
+  gap: 20px; 
   width: 100%;
   flex-grow: 1;
   overflow: hidden;
@@ -124,7 +123,7 @@ input::placeholder, textarea::placeholder {
 
 textarea {
   resize: none; 
-  height: 150px; 
+  height: 100px; 
 }
 
 .stylish-button {
@@ -141,61 +140,48 @@ textarea {
 }
 
 .stylish-button:hover {
-    background-color: #bb377d; 
-    transform: translateY(-3px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #bb377d; 
+  transform: translateY(-3px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .modal-content {
-    width: 70%;
+    width: 60%;
     height: 70%;
-    padding: 30px;
+    padding: 15px;
   }
-  textarea {
-    resize: none; 
-    height: 150px; 
-  }
+}
 
+@media (max-width: 992px) {
+  .modal-content {
+    width: 70%;
+    height: 75%;
+    padding: 15px;
+  }
+  
   .contact-section h2 {
     font-size: 1rem;
   }
 
   .stylish-button {
     padding: 10px 20px;
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .modal-content {
-    width: 65%;
-    height: 65%;
-    padding: 30px;
-  }
-  textarea {
-    resize: none; 
-    height: 150px; 
-  }
-  .contact-section h2 {
-    font-size: 0.95rem;
-  }
-
-  .stylish-button {
-    padding: 8px 18px;
     font-size: 0.85rem;
   }
 }
 
 @media (max-width: 768px) {
   .modal-content {
-    width: 60%;
-    height: 60%;
+    width: 80%;
+    height: 75%;
     padding: 15px;
   }
+  
   textarea {
-    height: 100px; 
+    height: 90px; 
   }
+
   .contact-section h2 {
     font-size: 0.9rem;
   }
@@ -208,11 +194,12 @@ textarea {
 
 @media (max-width: 576px) {
   .modal-content {
-    width: 50%;
-    height: 50%;
-    padding: 12px;
+    width: 90%;
+    height: 85%;
+    padding: 10px;
   }
-  textarea { 
+
+  textarea {
     height: 80px; 
   }
 
@@ -225,22 +212,24 @@ textarea {
     font-size: 0.75rem;
   }
 }
-@media (max-width: 520px) {
+
+@media (max-width: 480px) {
   .modal-content {
-    width: 50%;
-    height: 50%;
-    padding: 12px;
+    width: 95%;
+    height: 90%;
+    padding: 8px;
   }
-  textarea { 
-    height: 50px; 
+
+  textarea {
+    height: 70px; 
   }
 
   .contact-section h2 {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .stylish-button {
-    padding: 7px 12px;
-    font-size: 0.75rem;
+    padding: 6px 10px;
+    font-size: 0.7rem;
   }
 }
