@@ -135,7 +135,25 @@
 
   .list a {
     padding: 2px 2px;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+  }
+
+  .theme-toggle span {
+    font-size: 14px;
+  }
+}
+@media (max-width: 420px) {
+  .company-name {
+    font-size: 0.9rem;
+  }
+
+  .list {
+    gap: 6px;
+  }
+
+  .list a {
+    padding: 2px 1px;
+    font-size: 0.5rem;
   }
 
   .theme-toggle span {
