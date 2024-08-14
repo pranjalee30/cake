@@ -126,7 +126,7 @@
 
 @media (max-width: 576px) {
   .company-name {
-    font-size: 1.4rem;
+    font-size: 1rem;
   }
 
   .list {
@@ -134,8 +134,8 @@
   }
 
   .list a {
-    padding: 2px 3px;
-    font-size: 0.75rem;
+    padding: 2px 2px;
+    font-size: 0.6rem;
   }
 
   .theme-toggle span {
