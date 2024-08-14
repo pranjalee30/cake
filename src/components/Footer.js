@@ -12,6 +12,7 @@ function Footer() {
         <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
       </div>
       <p className="copyright">&copy; 2024 Cake Creations. All rights reserved.</p>
+      <p className="copyright">Made with ❤️ Love</p>
     </footer>
   );
 }
