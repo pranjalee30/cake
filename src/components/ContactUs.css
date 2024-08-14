@@ -209,11 +209,30 @@ textarea {
 @media (max-width: 576px) {
   .modal-content {
     width: 80%;
-    height: 45%;
+    height: 50%;
     padding: 12px;
   }
   textarea { 
     height: 80px; 
+  }
+
+  .contact-section h2 {
+    font-size: 0.85rem;
+  }
+
+  .stylish-button {
+    padding: 7px 12px;
+    font-size: 0.75rem;
+  }
+}
+@media (max-width: 520px) {
+  .modal-content {
+    width: 80%;
+    height: 50%;
+    padding: 12px;
+  }
+  textarea { 
+    height: 50px; 
   }
 
   .contact-section h2 {
