@@ -6,7 +6,7 @@ import pg from 'pg';
 
 const { Client } = pg;
 const client = new Client({
-  connectionString: process.env.DATABASE_URL,
+  connectionString: "postgresql://pranjalee30:mv33ghYKcRkKVO9L9RAp3w@cake-creations-5809.7s5.aws-ap-south-1.cockroachlabs.cloud:26257/cake_creations_db?sslmode=verify-full",
   ssl: {
     rejectUnauthorized: false,
   },
