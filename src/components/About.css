@@ -24,18 +24,15 @@
   font-family: 'Lato', sans-serif;
   font-size: 1.1rem;
   line-height: 1.6;
-  text-align: center; /* Center the text */
+  text-align: center;
 }
-
-/* Add these styles to About.css */
 
 .contact-button-container {
   display: flex;
-  justify-content: center; /* Center horizontally */
-  margin-top: 20px; /* Add some space above the button */
+  justify-content: center; 
+  margin-top: 20px;
 }
 
-/* Modal Styles */
 .modal-overlay {
   position: fixed;
   top: 0;
