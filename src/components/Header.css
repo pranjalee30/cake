@@ -60,6 +60,50 @@
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Profile Menu */
+.profile-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 1000;
+}
+
+.profile-dropdown p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.profile-dropdown a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin:4px;
+  padding: 8px 6px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-dropdown a:last-child {
+  border-bottom: none;
+}
+
+.profile-dropdown a:hover {
+  background-color: #f8b500;
+
+}
+
+/* Theme Toggle */
 .theme-toggle {
   display: flex;
   align-items: center;
@@ -106,6 +150,7 @@
     flex-direction: row;
     gap: 15px;
   }
+  
   .company-name {
     font-size: 1.6rem;
   }
@@ -142,6 +187,207 @@
     font-size: 14px;
   }
 }
+
+@media (max-width: 420px) {
+  .company-name {
+    font-size: 0.9rem;
+  }
+
+  .list {
+    gap: 6px;
+  }
+
+  .list a {
+    padding: 2px 1px;
+    font-size: 0.5rem;
+  }
+
+  .theme-toggle span {
+    font-size: 14px;
+  }
+}
+
+
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.company-name {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.navigation .list {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation .list li {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation Links */
+.list a {
+  font-family: 'Lato', sans-serif;
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 25px;
+  transition: background 0.3s ease;
+}
+
+.list a:hover {
+  background: #f8b500;
+  color: #fff;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Menu */
+.profile-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  color: #333;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  z-index: 1000;
+  display: none; /* Hide dropdown by default */
+}
+
+.profile-menu:hover .profile-dropdown,
+.profile-dropdown:hover {
+  display: block; /* Show dropdown on hover */
+}
+
+.profile-dropdown p {
+  margin: 0 0 10px;
+  font-weight: bold;
+}
+
+.profile-dropdown a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin: 4px;
+  padding: 8px 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile-dropdown a:last-child {
+  border-bottom: none;
+}
+
+.profile-dropdown a:hover {
+  background-color: #f8b500;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle span {
+  font-size: 24px;
+  margin: 0 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .company-name {
+    font-size: 2rem;
+  }
+
+  .list a {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+
+  .theme-toggle span {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 992px) {
+  .company-name {
+    font-size: 1.8rem;
+  }
+
+  .list a {
+    padding: 7px 10px;
+    font-size: 0.85rem;
+  }
+
+  .theme-toggle span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: row;
+    gap: 15px;
+  }
+  
+  .company-name {
+    font-size: 1.6rem;
+  }
+
+  .list {
+    flex-direction: row;
+  }
+
+  .list a {
+    padding: 3px 5px;
+    font-size: 0.7rem;
+  }
+
+  .theme-toggle span {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .list {
+    gap: 6px;
+  }
+
+  .list a {
+    padding: 2px 2px;
+    font-size: 0.5rem;
+  }
+
+  .theme-toggle span {
+    font-size: 14px;
+  }
+}
+
 @media (max-width: 420px) {
   .company-name {
     font-size: 0.9rem;

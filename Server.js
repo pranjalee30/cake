@@ -15,12 +15,14 @@ const db = new Client({
 });
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
 db.connect();
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: 'http://localhost:3000', 
+}));
 
 // Signup route
 app.post('/signup', async (req, res) => {

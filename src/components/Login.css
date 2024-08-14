@@ -27,6 +27,11 @@
     font-size: 1.5rem;
     cursor: pointer;
   }
+  .close:hover {
+    cursor: pointer;
+    color: #f8b500;
+
+  }
   
   h2 {
     margin-bottom: 20px;
@@ -41,7 +46,7 @@
   }
   
   .login-button {
-    width: 100%;
+    width: 40%;
     padding: 10px;
     background-color: #f8b500;
     color: white;
@@ -49,6 +54,8 @@
     border-radius: 0px 40px 0px 40px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    display: block; 
+    margin: 0 auto;
   }
   
   .cake button:hover {
@@ -71,5 +78,23 @@
   .toggle-link:hover {
     text-decoration: underline;
   }
+  .password-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  .password-toggle {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #666;
+  }
+  
+  .password-toggle:hover {
+    color: #333;
+  }
+  
   
   
