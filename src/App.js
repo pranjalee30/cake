@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import Header from "./components/Header";
-import Main from "./components/Main";
-import About from "./components/About";
-import Footer from "./components/Footer";
+import Header from "./components/Header.js";
+import Main from "./components/Main.js";
+import About from "./components/About.js";
+import Footer from "./components/Footer.js";
 import "./App.css";
 
 function App() {

@@ -1,0 +1,75 @@
+.login-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f8b500;
+    color: white;
+    border: none;
+    border-radius: 0px 40px 0px 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cake button:hover {
+    background-color: #bb377d; 
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .message {
+    margin-top: 10px;
+    color: red;
+  }
+  .toggle-link {
+    color: #f8b500;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .toggle-link:hover {
+    text-decoration: underline;
+  }
+  
+  
