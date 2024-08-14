@@ -34,8 +34,8 @@
   color: #000;
   padding: 15px; 
   border-radius: 15px; 
-  width: 40%; 
-  height: 55%; 
+  width: 80%; 
+  height: 80%; 
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   position: relative;
   display: flex;
@@ -148,8 +148,8 @@ textarea {
 /* Responsive Styles */
 @media (max-width: 1200px) {
   .modal-content {
-    width: 50%;
-    height: 55%;
+    width: 70%;
+    height: 70%;
     padding: 30px;
   }
   textarea {
@@ -169,8 +169,8 @@ textarea {
 
 @media (max-width: 992px) {
   .modal-content {
-    width: 60%;
-    height: 55%;
+    width: 65%;
+    height: 65%;
     padding: 30px;
   }
   textarea {
@@ -189,8 +189,8 @@ textarea {
 
 @media (max-width: 768px) {
   .modal-content {
-    width: 80%;
-    height: 50%;
+    width: 60%;
+    height: 60%;
     padding: 15px;
   }
   textarea {
@@ -208,7 +208,7 @@ textarea {
 
 @media (max-width: 576px) {
   .modal-content {
-    width: 80%;
+    width: 50%;
     height: 50%;
     padding: 12px;
   }
@@ -227,7 +227,7 @@ textarea {
 }
 @media (max-width: 520px) {
   .modal-content {
-    width: 80%;
+    width: 50%;
     height: 50%;
     padding: 12px;
   }
