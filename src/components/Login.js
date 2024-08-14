@@ -25,7 +25,7 @@ function Login({ onClose }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = isLogin ? 'https://cake-cyan.vercel.app/login' : 'https://cake-cyan.vercel.app/signup';
+      const url = isLogin ? 'https://cake-cyan.vercel.app/#login' : 'https://cake-cyan.vercel.app/#signup';
       const response = await axios.post(url, { username, password });
       setMessage(response.data.message);
       if (response.data.status === 'success' && isLogin) {
