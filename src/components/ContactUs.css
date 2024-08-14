@@ -149,7 +149,7 @@ textarea {
 @media (max-width: 1200px) {
   .modal-content {
     width: 70%;
-    height: 70%;
+    height: 80%;
     padding: 15px;
   }
 }
@@ -157,7 +157,7 @@ textarea {
 @media (max-width: 992px) {
   .modal-content {
     width: 75%;
-    height: 75%;
+    height: 80%;
     padding: 15px;
   }
   
@@ -174,7 +174,7 @@ textarea {
 @media (max-width: 768px) {
   .modal-content {
     width: 80%;
-    height: 75%;
+    height: 80%;
     padding: 15px;
   }
   
@@ -195,7 +195,7 @@ textarea {
 @media (max-width: 576px) {
   .modal-content {
     width: 90%;
-    height: 85%;
+    height: 80%;
     padding: 10px;
   }
 
