@@ -69,7 +69,7 @@
 .profile-dropdown {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   background: #fff;
   color: #333;
   padding: 10px;
@@ -100,7 +100,6 @@
 
 .profile-dropdown a:hover {
   background-color: #f8b500;
-
 }
 
 /* Theme Toggle */
