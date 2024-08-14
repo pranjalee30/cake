@@ -5,19 +5,23 @@ import cors from 'cors';
 import pg from 'pg';
 
 const { Client } = pg;
+const client = new Client({
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
+});
 
-const db = new Client({
-  user: "postgres",
-  host: "localhost",
-  database: "cake_creations_db",
-  password: "Pranjal@421",
-  port: 5432,
+client.connect(err => {
+  if (err) {
+    console.error('Failed to connect to database:', err.stack);
+  } else {
+    console.log('Connected to database');
+  }
 });
 
 const app = express();
-const port = 5000;
-
-db.connect();
+const port = process.env.PORT;
 
 app.use(bodyParser.json());
 app.use(cors({
@@ -29,10 +33,11 @@ app.post('/signup', async (req, res) => {
   const { username, password } = req.body;
   try {
     const hashedPassword = await bcrypt.hash(password, 10);
-    await db.query('INSERT INTO users (username, password) VALUES ($1, $2)', [username, hashedPassword]);
+    await client.query('INSERT INTO users (username, password) VALUES ($1, $2)', [username, hashedPassword]);
     res.json({ status: 'success', message: 'User registered successfully' });
   } catch (err) {
-    res.status(500).json({ status: 'error', message: err.message });
+    console.error('Signup error:', err.message);
+    res.status(500).json({ status: 'error', message: 'An error occurred during signup' });
   }
 });
 
@@ -40,7 +45,7 @@ app.post('/signup', async (req, res) => {
 app.post('/login', async (req, res) => {
   const { username, password } = req.body;
   try {
-    const userQuery = await db.query('SELECT * FROM users WHERE username = $1', [username]);
+    const userQuery = await client.query('SELECT * FROM users WHERE username = $1', [username]);
     
     if (userQuery.rows.length > 0) {
       const validPassword = await bcrypt.compare(password, userQuery.rows[0].password);
@@ -54,7 +59,8 @@ app.post('/login', async (req, res) => {
       res.json({ status: 'error', message: 'User does not exist' });
     }
   } catch (err) {
-    res.status(500).json({ status: 'error', message: err.message });
+    console.error('Login error:', err.message);
+    res.status(500).json({ status: 'error', message: 'An error occurred during login' });
   }
 });
 
