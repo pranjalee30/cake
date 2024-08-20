@@ -1,100 +1,101 @@
-.login-popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .login-content {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    position: relative;
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  .close:hover {
-    cursor: pointer;
-    color: #f8b500;
+/* Login.css */
 
-  }
-  
-  h2 {
-    margin-bottom: 20px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .login-button {
-    width: 40%;
-    padding: 10px;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.login-form {
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #bb377d;
+}
+
+.login-form h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 50px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #bb377d;
+}
+.password-toggle {
+  position: absolute;
+  bottom:32%;
+  left:330px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+.password-toggle:hover {
+  color: #333;
+}
+
+.login-button {
+    margin: 0 auto;
     background-color: #f8b500;
     color: white;
-    border: none;
-    border-radius: 0px 40px 0px 40px;
-    cursor: pointer;
+    padding: 15px 30px;
+    font-size: 1rem;
+    width:30%;
+    text-decoration: none;
+    border-radius:  40px 0px 40px 0px;
     transition: background-color 0.3s ease;
-    display: block; 
-    margin: 0 auto;
-  }
-  
-  .cake button:hover {
-    background-color: #bb377d; 
-    transform: translateY(-3px); 
+}
+
+.login-button:hover {
+   background-color: #bb377d; 
+    transform: translateY(-5px); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .message {
-    margin-top: 10px;
-    color: red;
-  }
-  .toggle-link {
-    color: #f8b500;
-    cursor: pointer;
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .toggle-link:hover {
-    text-decoration: underline;
-  }
-  .password-container {
-    position: relative;
-    width: 100%;
-  }
-  
-  .password-toggle {
-    position: absolute;
-    top: 35%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-    color: #666;
-  }
-  
-  .password-toggle:hover {
-    color: #333;
-  }
-  
-  
-  
+}

@@ -1,47 +1,65 @@
-import React, { useState } from 'react'; 
-import './Login.css';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
-function Login() {
+import './Login.css';
 
+const Login = () => {
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // Add your authentication logic here
+
+    // Redirect to another page after successful login
+    navigate('/dashboard');
+  };
+
+  const handleClose = () => {
+    // Logic to close the modal or redirect to another page
+    navigate('/');
+  };
+  const [showPassword, setShowPassword] = useState(false);
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
+
   return (
-    <div className="login-popup">
-      <div className="login-content">
-        <span className="close" onClick={onClose}>&times;</span>
-        <h2>{isLogin ? 'Login' : 'Sign Up'}</h2>
-        <form >
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
-            required
-          />
-          <div className="password-container">
-            <input
-              type={showPassword ? 'text' : 'password'}
-              placeholder="Password"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
+    <div className="login-container">
+      <div className="login-form">
+        <button className="close-button" onClick={handleClose}>×</button>
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+       
+          <div className="input-group">
+            <label>Email</label>
+            <input 
+              type="email" 
+              value={email} 
+              onChange={(e) => setEmail(e.target.value)} 
+              required 
+            />
+          </div>
+          <div className="input-group">
+            <label>Password</label>
+            <input 
+              type={showPassword ? 'text' : 'password'} 
+              value={password} 
+              onChange={(e) => setPassword(e.target.value)} 
+              required 
             />
             <span className="password-toggle" onClick={togglePasswordVisibility}>
               <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
             </span>
           </div>
-          <button className="login-button" type="submit">{isLogin ? 'Login' : 'Sign Up'}</button>
+          <button type="submit" className="login-button">Login</button>
         </form>
-        {message && <p className="message">{message}</p>}
-        <p onClick={toggleMode} className="toggle-link">
-          {isLogin ? "Don't have an account? Sign Up" : "Already have an account? Login"}
-        </p>
       </div>
     </div>
   );
-}
+};
 
 export default Login;

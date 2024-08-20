@@ -1,0 +1,15 @@
+[
+    { "id": 1, "name": "Chocolate Delight", "flavor": "Chocolate", "price": 25, "img": "1.jpeg"},
+    { "id": 2, "name": "Vanilla Dream", "flavor": "Vanilla", "price": 20, "img": "2.jpeg" },
+    { "id": 3, "name": "Red Velvet Delight", "flavor": "Red Velvet", "price": 28, "img": "3.jpeg" },
+    { "id": 4, "name": "Lemon Zest Sensation", "flavor": "Lemon", "price": 30, "img": "4.jpeg" },
+    { "id": 5, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 22, "img": "5.jpeg" },
+    { "id": 6, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 27, "img": "6.jpeg" },
+    { "id": 7, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 29, "img": "7.jpeg" },
+    { "id": 8, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 35, "img": "8.jpeg" },
+    { "id": 9, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 40, "img": "9.jpeg" },
+    { "id": 10, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 33, "img": "10.jpeg" },
+    { "id": 11, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 38, "img": "11.jpeg" },
+    { "id": 12, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 36, "img": "12.jpeg" }
+  ]
+  

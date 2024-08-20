@@ -1,10 +1,11 @@
 import React from "react";
 import "./Header.css";
+import { Link } from "react-router-dom";
 import Switch from "react-switch";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faOpencart } from '@fortawesome/free-brands-svg-icons';
 
-function Header({ theme, toggleTheme }) {
+function Header({ theme, toggleTheme, handleCartClick }) {
   return (
     <header className="header">
       <nav className="navigation">
@@ -14,11 +15,10 @@ function Header({ theme, toggleTheme }) {
           </h1>
         </a>
         <ul className="list">
-          <li><a href="#home">Home</a></li>
-          <li><a href="#cart"><FontAwesomeIcon icon={faOpencart} />Cart</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#login">Login</a></li>
-          <li><a href="#profile">Profile</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/cart"><FontAwesomeIcon icon={faOpencart} /> Cart</Link></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/login">Login</Link></li>
           <li>
             <div className="theme-toggle">
               <span role="img" aria-label="sun">🌞</span>
