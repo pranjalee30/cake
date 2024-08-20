@@ -1,49 +1,19 @@
-import React, { useState } from 'react';
-import axios from 'axios';
-import { useAuth } from './AuthContext.js'; // Import your useAuth hook
+import React, { useState } from 'react'; 
 import './Login.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
-function Login({ onClose }) {
-  const { login } = useAuth(); // Access login function
-  const [isLogin, setIsLogin] = useState(true);
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [message, setMessage] = useState('');
-  const [showPassword, setShowPassword] = useState(false);
-
-  const toggleMode = () => {
-    setIsLogin(!isLogin);
-    setMessage('');
-  };
+function Login() {
 
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    try {
-      const url = isLogin ? 'https://cake-cyan.vercel.app/#login' : 'https://cake-cyan.vercel.app/#signup';
-      const response = await axios.post(url, { username, password });
-      setMessage(response.data.message);
-      if (response.data.status === 'success' && isLogin) {
-        login(username); 
-        onClose(); 
-      }
-    } catch (error) {
-      console.error("Login error:", error.response ? error.response.data : error.message); // Log detailed error
-      setMessage('An error occurred. Please try again.');
-    }
-  };
-
   return (
     <div className="login-popup">
       <div className="login-content">
         <span className="close" onClick={onClose}>&times;</span>
         <h2>{isLogin ? 'Login' : 'Sign Up'}</h2>
-        <form onSubmit={handleSubmit}>
+        <form >
           <input
             type="text"
             placeholder="Username"
