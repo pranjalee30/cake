@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
 
@@ -8,20 +7,15 @@ import './Login.css';
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add your authentication logic here
 
     // Redirect to another page after successful login
-    navigate('/dashboard');
   };
 
-  const handleClose = () => {
-    // Logic to close the modal or redirect to another page
-    navigate('/');
-  };
+  
   const [showPassword, setShowPassword] = useState(false);
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
@@ -30,7 +24,7 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="login-form">
-        <button className="close-button" onClick={handleClose}>×</button>
+        <button className="close-button" >×</button>
         <h2>Login</h2>
         <form onSubmit={handleSubmit}>
        

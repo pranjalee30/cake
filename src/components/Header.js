@@ -5,7 +5,7 @@ import Switch from "react-switch";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faOpencart } from '@fortawesome/free-brands-svg-icons';
 
-function Header({ theme, toggleTheme, handleCartClick }) {
+function Header({ theme, toggleTheme }) {
   return (
     <header className="header">
       <nav className="navigation">

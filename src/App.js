@@ -1,4 +1,4 @@
-import React, { useState,useNavigate,useEffect} from "react";
+import React, { useState} from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header.js";
 import Main from "./components/Main.js";
@@ -69,7 +69,6 @@ function App() {
           />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<Login />}/>
-          <Route path="*" element={<RedirectToHome />} />
         </Routes>
         <Footer />
         <ToastContainer />
@@ -77,13 +76,6 @@ function App() {
     </Router>
   );
 }
-function RedirectToHome() {
-  const navigate = useNavigate();
-  useEffect(() => {
-    navigate('/');
-  }, [navigate]);
 
-  return null; 
-}
 
 export default App;
