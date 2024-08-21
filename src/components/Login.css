@@ -219,7 +219,7 @@ h2 {
 /* For small phones */
 @media (max-width: 480px) {
   .login-form {
-    width: 100%;
+    width: 80%;
     padding: 1rem;
   }
 
@@ -234,7 +234,7 @@ h2 {
   }
 
   .oauth-buttons {
-    flex-direction: column;
+    flex-direction: row;
     gap: 5px;
   }
 }

@@ -48,16 +48,14 @@
 /* Close Button */
 .close-button {
   position: absolute;
-  top: 20px;
-  right: 20px;
   background: none;
   color: #000;
   border: none;
   font-size: 1rem;
   cursor: pointer;
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 80px;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -72,16 +70,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px; 
+  gap: 16px; /* Increased gap for better spacing */
+  padding: 20px; /* Added padding to enhance the layout */
   height: 100%;
-  overflow: hidden; 
+  overflow-y: auto; /* Allows scrolling if content overflows */
 }
 
 .contact-section h2 {
   font-family: 'Pacifico', cursive;
-  font-size: 1.2rem;
+  font-size: 1.5rem; /* Increased font size for better readability */
   color: #f8b500;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -91,25 +90,24 @@ form {
   gap: 20px; 
   width: 100%;
   flex-grow: 1;
-  overflow: hidden;
 }
 
 label {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px; /* Increased gap for better spacing */
 }
 
 h4 {
   font-family: 'Lato', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.95rem; /* Slightly increased font size for better readability */
   color: #000;
 }
 
 input, textarea {
-  padding: 6px; 
+  padding: 10px; /* Increased padding for better user interaction */
   font-family: 'Lato', sans-serif;
-  font-size: 0.85rem;
+  font-size: 0.9rem; /* Slightly increased font size */
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
@@ -130,9 +128,9 @@ textarea {
   background: #f8b500;
   color: #fff;
   border: none;
-  padding: 8px 15px;
+  padding: 10px 20px; /* Adjusted padding for better touch interaction */
   font-family: 'Lato', sans-serif;
-  font-size: 0.8rem; 
+  font-size: 0.9rem; /* Slightly increased font size */
   border-radius: 0px 30px 0px 30px;
   cursor: pointer;
   transition: background 0.3s ease, box-shadow 0.3s ease;
@@ -162,12 +160,12 @@ textarea {
   }
   
   .contact-section h2 {
-    font-size: 1rem;
+    font-size: 1.3rem; /* Reduced font size for smaller screens */
   }
 
   .stylish-button {
     padding: 10px 20px;
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -183,7 +181,7 @@ textarea {
   }
 
   .contact-section h2 {
-    font-size: 0.9rem;
+    font-size: 1.1rem; /* Reduced font size for better balance */
   }
 
   .stylish-button {
@@ -200,11 +198,11 @@ textarea {
   }
 
   textarea {
-    height: 140px; 
+    height: 120px; /* Adjusted height for smaller screens */
   }
 
   .contact-section h2 {
-    font-size: 0.85rem;
+    font-size: 1rem; /* Further reduced font size for small screens */
   }
 
   .stylish-button {
@@ -221,11 +219,11 @@ textarea {
   }
 
   textarea {
-    height: 150px; 
+    height: 110px; /* Adjusted height for very small screens */
   }
 
   .contact-section h2 {
-    font-size: 0.8rem;
+    font-size: 0.9rem; /* Adjusted font size */
   }
 
   .stylish-button {
