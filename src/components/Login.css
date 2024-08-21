@@ -232,6 +232,12 @@ h2 {
     padding: 0.5rem;
     font-size: 0.875rem;
   }
+  .remember-me input[type="checkbox"]:checked::after {
+    left: 4px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+  }
 
   .oauth-buttons {
     flex-direction: row;
