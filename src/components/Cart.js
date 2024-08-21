@@ -5,7 +5,7 @@ import { FaTrashAlt } from 'react-icons/fa';
 import "./Cart.css";
 
 function Cart({ cart, removeFromCart, placeOrder }) {
-    const notify = (message) => toast(message);
+  const notify = (message) => toast(message);
 
   const handleRemove = (id) => {
     removeFromCart(id);

@@ -1,101 +1,217 @@
-/* Login.css */
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
-}
-
+/* Container for the login form */
 .login-container {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.5);
+  background: #f5f5f5; /* Light background color */
 }
 
+/* Styling for the login form */
 .login-form {
+  background: #fff; /* White background for the form */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  max-width: 400px;
   position: relative;
-  background: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  width: 350px;
 }
 
+/* Close button styling */
 .close-button {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: none;
+  background: transparent;
   border: none;
-  font-size: 24px;
-  color: #333;
+  font-size: 1.5rem;
   cursor: pointer;
-  transition: color 0.3s ease;
-}
-
-.close-button:hover {
-  color: #bb377d;
-}
-
-.login-form h2 {
-  text-align: center;
   color: #333;
-  margin-bottom: 20px;
 }
 
+/* Header styling */
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+/* Error message styling */
+.error-message {
+  display:flex;
+  justify-content: center;
+  color: #e74c3c; /* Red color for error */
+  margin-bottom: 1rem;
+  margin-top:1rem;
+  font-size: 0.875rem;
+}
+
+/* Input group styling */
 .input-group {
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
+  position: relative;
 }
 
 .input-group label {
   display: block;
+  margin-bottom: 0.5rem;
   font-weight: bold;
-  color: #333;
-  margin-bottom: 5px;
+  color: #555;
 }
 
 .input-group input {
   width: 100%;
-  padding: 10px;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
   border-radius: 50px;
-  border: 1px solid #ccc;
-  font-size: 16px;
-  transition: border-color 0.3s ease;
+  font-size: 1rem;
+  box-sizing: border-box;
 }
 
 .input-group input:focus {
-  border-color: #bb377d;
+  border-color: #bb377d; 
+  outline: none;
 }
+
+/* Password visibility toggle */
+.password-eye {
+  display: flex;
+  align-items: center; 
+}
+
 .password-toggle {
-  position: absolute;
-  bottom:32%;
-  left:330px;
-  transform: translateY(-50%);
+  margin-left: -30px; 
   cursor: pointer;
-  color: #666;
-}
-
-.password-toggle:hover {
   color: #333;
+  z-index: 1; 
 }
 
+/* Container for Remember Me */
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 3px; /* Space between the checkbox and label */
+  margin-left: auto; /* Push the container to the right */
+}
+/* Checkbox styling */
+/* Hide the default checkbox */
+.remember-me input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #333;; /* Border color */
+  border-radius: 50px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+  cursor: pointer;
+  position: relative;
+}
+
+/* Checked state */
+.remember-me input[type="checkbox"]:checked {
+  background-color:#bb377d; /* Checkbox color when checked */
+  border-color: #333;
+}
+
+/* Custom checkmark */
+.remember-me input[type="checkbox"]:checked::after {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  width: 6px;
+  height: 10px;
+  border: solid #333;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+/* Optional: Add a hover effect */
+.remember-me input[type="checkbox"]:hover {
+  border-color: #333; /* Darker border on hover */
+}
+
+
+/* Label styling */
+.remember-me label {
+  margin: 0;
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+/* Login button styling */
 .login-button {
-    margin: 0 auto;
-    background-color: #f8b500;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1rem;
-    width:30%;
-    text-decoration: none;
-    border-radius:  40px 0px 40px 0px;
-    transition: background-color 0.3s ease;
+  margin:0 auto;
+  background-color: #bb377d;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius:  40px 0px 40px 0px;
+  transition: background-color 0.3s ease;
+  width:40%;
+  cursor: pointer;
 }
 
 .login-button:hover {
-   background-color: #bb377d; 
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f8b500; 
+  transform: translateY(-5px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* OAuth buttons styling */
+.oauth-buttons {
+  display: flex;
+  justify-content: center;
+  gap:10px;
+  margin-top: 1rem;
+}
+
+.oauth-button {
+  background: #ddd;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.oauth-button:hover {
+  background: #ccc;
+}
+
+.oauth-button.google {
+  background: #db4437; /* Google red */
+  color: #fff;
+}
+
+.oauth-button.facebook {
+  background: #3b5998; /* Facebook blue */
+  color: #fff;
+}
+.oauth-button.twitter{
+  background: #1DA1F2; /* Facebook blue */
+  color: #fff;
+}
+
+/* Forgot password link styling */
+.forgot-password {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.forgot-password a {
+  color: #3498db; /* Blue color for link */
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  text-decoration: underline;
 }
