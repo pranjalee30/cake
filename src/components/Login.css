@@ -215,3 +215,26 @@ h2 {
 .forgot-password a:hover {
   text-decoration: underline;
 }
+
+/* For small phones */
+@media (max-width: 480px) {
+  .login-form {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .login-button {
+    font-size: 0.875rem;
+    padding: 10px;
+  }
+
+  .input-group input {
+    padding: 0.5rem;
+    font-size: 0.875rem;
+  }
+
+  .oauth-buttons {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
