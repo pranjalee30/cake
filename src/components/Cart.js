@@ -1,6 +1,7 @@
 import React from "react";
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { FaTrashAlt } from 'react-icons/fa';
 import "./Cart.css";
 
 function Cart({ cart, removeFromCart, placeOrder }) {
@@ -14,6 +15,7 @@ function Cart({ cart, removeFromCart, placeOrder }) {
     placeOrder();
     notify("Order placed successfully!");
   };
+
   return (
     <section id="cart" className="cart">
       <ToastContainer />
@@ -23,14 +25,20 @@ function Cart({ cart, removeFromCart, placeOrder }) {
       ) : (
         <ul>
           {cart.map((cake, index) => (
-            <li key={index}>
-              {cake.name} - ${cake.price} x {cake.quantity}
-              <button onClick={() => handleRemove(cake.id)}>Remove</button>
+            <li key={index} className="cart-item">
+              <img src={`${process.env.PUBLIC_URL}/images/${cake.img}`} alt={cake.name} className="cart-item-image" />
+              <div className="cart-item-details">
+                <span>{cake.name}</span>
+                <span>${cake.price} x {cake.quantity}</span>
+              </div>
+              <button className="remove-btn" onClick={() => handleRemove(cake.id)}>
+                <FaTrashAlt />
+              </button>
             </li>
           ))}
         </ul>
       )}
-      {cart.length > 0 && <button onClick={handlePlaceOrder}>Order</button>}
+      {cart.length > 0 && <button onClick={handlePlaceOrder} className="order-btn">Place Order</button>}
     </section>
   );
 }

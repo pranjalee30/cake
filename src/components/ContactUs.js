@@ -15,7 +15,7 @@ function ContactUs() {
       {isOpen && (
         <div className="modal-overlay">
           <div className="modal-content">
-            <button onClick={closeModal} className="close-button">X</button>
+            <button onClick={closeModal} className="close-button">x</button>
             <section id="contact" className="contact-section">
               <h2>Contact Us</h2>
               <form>

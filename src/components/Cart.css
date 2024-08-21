@@ -1,4 +1,10 @@
-/* Cart Section */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
 .cart {
     font-family: 'Lato', sans-serif;
     padding: 20px;
@@ -6,7 +12,7 @@
     border-radius: 10px;
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
-    max-width: 800px;
+    width: 60%;
 }
 
 .cart h2 {
@@ -27,35 +33,51 @@
     padding: 0;
 }
 
-.cart li {
+.cart-item {
     background: #fff;
     border-radius: 10px;
     padding: 15px;
     margin-bottom: 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cart li button {
-    background-color: #f8b500;
-    color: white;
+.cart-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cart-item-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.remove-btn {
+    background-color: transparent;
     border: none;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-size: 1rem;
+    color: #f8b500;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
-.cart li button:hover {
-    background-color: #bb377d;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.remove-btn:hover {
+    color: #bb377d;
 }
 
-.cart button {
+.order-btn {
     background-color: #f8b500;
     color: white;
     padding: 15px 30px;
@@ -68,7 +90,7 @@
     margin: 20px auto;
 }
 
-.cart button:hover {
+.order-btn:hover {
     background-color: #bb377d;
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -84,16 +106,18 @@
         font-size: 1rem;
     }
 
-    .cart li {
+    .cart-item {
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .cart li button {
-        margin-top: 10px;
+    .cart-item-image {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
     }
 
-    .cart button {
+    .order-btn {
         padding: 12px 25px;
         font-size: 1rem;
     }
@@ -108,16 +132,16 @@
         font-size: 0.9rem;
     }
 
-    .cart li {
+    .cart-item {
         padding: 10px;
     }
 
-    .cart li button {
-        padding: 6px 12px;
-        font-size: 0.9rem;
+    .cart-item-image {
+        width: 40px;
+        height: 40px;
     }
 
-    .cart button {
+    .order-btn {
         padding: 10px 20px;
         font-size: 0.9rem;
     }

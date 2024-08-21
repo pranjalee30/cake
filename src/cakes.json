@@ -1,15 +1,98 @@
 [
-    { "id": 1, "name": "Chocolate Delight", "flavor": "Chocolate", "price": 25, "img": "1.jpeg"},
-    { "id": 2, "name": "Vanilla Dream", "flavor": "Vanilla", "price": 20, "img": "2.jpeg" },
-    { "id": 3, "name": "Red Velvet Delight", "flavor": "Red Velvet", "price": 28, "img": "3.jpeg" },
-    { "id": 4, "name": "Lemon Zest Sensation", "flavor": "Lemon", "price": 30, "img": "4.jpeg" },
-    { "id": 5, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 22, "img": "5.jpeg" },
-    { "id": 6, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 27, "img": "6.jpeg" },
-    { "id": 7, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 29, "img": "7.jpeg" },
-    { "id": 8, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 35, "img": "8.jpeg" },
-    { "id": 9, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 40, "img": "9.jpeg" },
-    { "id": 10, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 33, "img": "10.jpeg" },
-    { "id": 11, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 38, "img": "11.jpeg" },
-    { "id": 12, "name": "Chocolate Indulgence", "flavor": "Chocolate", "price": 36, "img": "12.jpeg" }
-  ]
-  
+  { 
+    "id": 1, 
+    "name": "Chocolate Delight", 
+    "flavor": "Chocolate",
+    "description": "Chocolate Delight is a rich and indulgent chocolate cake with multiple layers of velvety chocolate ganache. This cake is perfect for chocolate lovers who crave a luxurious treat that melts in your mouth with every bite.", 
+    "price": 25, 
+    "img": "1.jpeg"
+  },
+  { 
+    "id": 2, 
+    "name": "Vanilla Dream", 
+    "flavor": "Vanilla",
+    "description": "Vanilla Dream is a classic vanilla cake that embodies simplicity and elegance. Topped with a smooth vanilla buttercream frosting, this cake is ideal for any celebration, offering a light and airy texture with a delicate flavor.", 
+    "price": 20, 
+    "img": "2.jpeg" 
+  },
+  { 
+    "id": 3, 
+    "name": "Chocolate Indulgence", 
+    "flavor": "Chocolate", 
+    "description": "Chocolate Indulgence is a decadent treat designed to satisfy the most intense chocolate cravings. This cake is covered in a rich, creamy ganache that adds a luxurious touch to every bite, making it a must-have for chocolate aficionados.", 
+    "price": 25, 
+    "img": "3.jpeg" 
+  },
+  { 
+    "id": 4, 
+    "name": "Lemon Zest Sensation", 
+    "flavor": "Lemon", 
+    "description": "Lemon Zest Sensation offers a burst of citrusy freshness with every bite. This cake features a zesty lemon flavor that is perfectly balanced with a hint of sweetness, making it a refreshing choice for those who enjoy bright, tangy desserts.", 
+    "price": 30, 
+    "img": "4.jpeg" 
+  },
+  { 
+    "id": 5, 
+    "name": "Carrot Crunch", 
+    "flavor": "Chocolate", 
+    "description": "Carrot Crunch brings together the earthy sweetness of carrots with a rich chocolate base. This cake is a delightful blend of flavors and textures, offering a satisfying crunch that complements its decadent chocolatey goodness.", 
+    "price": 22, 
+    "img": "5.jpeg" 
+  },
+  { 
+    "id": 6, 
+    "name": "Strawberry Bliss", 
+    "flavor": "Chocolate", 
+    "description": "Strawberry Bliss is a harmonious fusion of juicy strawberries and rich chocolate. This cake is a blissful treat for those who enjoy the combination of fresh fruit and chocolate, delivering a taste that is both sweet and indulgent.", 
+    "price": 27, 
+    "img": "6.jpeg" 
+  },
+  { 
+    "id": 7, 
+    "name": "Coconut Dream", 
+    "flavor": "Chocolate", 
+    "description": "Coconut Dream is a tropical escape in cake form. This dessert features the rich flavor of chocolate paired with the subtle sweetness of coconut, creating a dreamy, exotic taste experience that is both unique and delightful.", 
+    "price": 29, 
+    "img": "7.jpeg" 
+  },
+  { 
+    "id": 8, 
+    "name": "Coffee Caramel Indulgence", 
+    "flavor": "Chocolate", 
+    "description": "Coffee Caramel Indulgence is a cake for those who appreciate the rich, deep flavor of coffee combined with the sweetness of caramel and the richness of chocolate. This cake offers a layered experience of taste, making it perfect for sophisticated palates.", 
+    "price": 35, 
+    "img": "8.jpeg" 
+  },
+  { 
+    "id": 9, 
+    "name": "Banana Nut Delight", 
+    "flavor": "Chocolate", 
+    "description": "Banana Nut Delight is a wholesome and delicious cake that combines the natural sweetness of ripe bananas with the crunch of nuts and the richness of chocolate. It's a delightful treat for those who love a blend of fruity and nutty flavors.", 
+    "price": 40, 
+    "img": "9.jpeg" 
+  },
+  { 
+    "id": 10, 
+    "name": "Raspberry White Chocolate", 
+    "flavor": "Chocolate", 
+    "description": "Raspberry White Chocolate is a sophisticated cake that pairs the tartness of raspberries with the creamy sweetness of white chocolate. This cake is a perfect choice for those who enjoy a refined and balanced dessert experience.", 
+    "price": 33, 
+    "img": "10.jpeg" 
+  },
+  { 
+    "id": 11, 
+    "name": "Pineapple Upside-Down", 
+    "flavor": "Chocolate", 
+    "description": "Pineapple Upside-Down is a delightful twist on the classic dessert, featuring the tropical sweetness of pineapple paired with rich chocolate. This cake is a great choice for those who enjoy a unique and flavorful dessert.", 
+    "price": 38, 
+    "img": "11.jpeg" 
+  },
+  { 
+    "id": 12, 
+    "name": "Red Velvet Delight", 
+    "flavor": "Chocolate", 
+    "description": "Red Velvet Delight is a luxurious cake that combines the smooth texture of red velvet with the richness of chocolate. This cake is perfect for special occasions, offering a touch of elegance with every slice.", 
+    "price": 36, 
+    "img": "12.jpeg" 
+  }
+]

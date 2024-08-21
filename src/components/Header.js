@@ -9,11 +9,11 @@ function Header({ theme, toggleTheme }) {
   return (
     <header className="header">
       <nav className="navigation">
-        <a href="/cake">
+        <Link to="/">
           <h1 className="company-name">
             <span role="img" aria-label="cake">👨‍🍳</span>Cake Creations
           </h1>
-        </a>
+        </Link>
         <ul className="list">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/cart"><FontAwesomeIcon icon={faOpencart} /> Cart</Link></li>
