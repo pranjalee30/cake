@@ -2,8 +2,6 @@
 
 Welcome to **Cake Creations**, your online destination for delicious, handcrafted cakes for every occasion! Our website offers a wide range of cakes, from classic flavors to modern innovations, all designed to bring sweetness to your special moments.
 
-![Cake Creations Screenshot](cake-app.png)
-
 ---
 
 ## Table of Contents
@@ -15,9 +13,6 @@ Welcome to **Cake Creations**, your online destination for delicious, handcrafte
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [Running Locally](#running-locally)
-- [Contributing](#contributing)
-- [License](#license)
-- [Contact](#contact)
 
 ---
 
