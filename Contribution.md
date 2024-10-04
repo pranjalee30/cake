@@ -11,8 +11,6 @@ We welcome all kinds of contributions, whether it's improving the code, writing 
 - [Creating Issues](#creating-issues)
 - [Making Pull Requests](#making-pull-requests)
 - [Development Guidelines](#development-guidelines)
-- [Style Guides](#style-guides)
-- [Need Help?](#need-help)
 
 ## How to Contribute
 
