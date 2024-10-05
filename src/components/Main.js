@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import './Main.css';
 import cakesData from '../cakes.json';
+import intro_vid from '../components/intro_vid.mp4';
+
 function Main({ addToCart }) {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      console.log(videoRef.current)
+      videoRef.current.play().catch(error => {
+        console.log("Autoplay was prevented:", error);
+      });
+    }
+  }, []);
 
   return (
     <main>
       <section id="home" className="hero">
+        <video ref={videoRef} src={intro_vid} loop muted playsInline></video>
         <h1>Happiness is knowing there's cake in the oven.</h1>
         <p>Explore our delicious cakes for all occasions.</p>
         <a href="#cakes" className="btn">

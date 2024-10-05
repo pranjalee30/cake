@@ -11,7 +11,7 @@ function Header({ theme, toggleTheme }) {
       <nav className="navigation">
         <Link to="/">
           <h1 className="company-name">
-            <span role="img" aria-label="cake">👨‍🍳</span>Cake Creations
+          Cake Creations
           </h1>
         </Link>
         <ul className="list">

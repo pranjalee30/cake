@@ -2,12 +2,15 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: linear-gradient(75deg, #f4eef1, #bb377d);
+  /* background: linear-gradient(75deg, #f4eef1, #bb377d); */
+  background: rgb(78,73,75);
+  background: radial-gradient(circle, rgba(78,73,75,1) 16%, rgba(6,6,6,1) 65%);
   padding: 20px;
   border-top: 1px solid #ccc;
 }
 .copyright{
-  color:black;
+  color:rgb(252, 247, 247);
+  font-weight: 700;
 }
 
 .icons {
