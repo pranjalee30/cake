@@ -1,176 +1,224 @@
-/* Main Section */
+/* General Styles for All Screens */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #ffe6f2; /* Light pink background */
+  color: #333;
+}
+
 main {
-    font-family: 'Lato', sans-serif;
-    padding: 20px;
-  }
-  
-  /* Hero Section */
-  .hero {
-    text-align: center;
-    padding: 50px 20px;
-    background: linear-gradient(145deg, #fbd3e9, #bb377d);
-    color: #fff;
-    border-radius: 10px;
-    margin-bottom: 40px;
-  }
-  
-  .hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-  }
-  
-  .hero .btn {
-    background-color: #f8b500;
-    color: white;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    text-decoration: none;
-    border-radius:  40px 0px 40px 0px;
-    transition: background-color 0.3s ease;
-  }
-  
-  .hero .btn:hover {
-    background-color: #bb377d; 
-    transform: translateY(-5px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Cake Catalog Section */
-  .cake-catalog {
-    text-align: center;
-  }
-  
-  .cake-catalog h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-  }
-  
-  /* Cake Listings */
+  padding: 20px;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ff99cc; /* Pink background */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #fefefe;
+}
+
+/* Browse Cakes Button - Pink & White Theme */
+.hero .btn {
+  padding: 15px 30px; /* Bigger padding for a larger button */
+  background-color: white;
+  color: #ff66b2; /* Pink text */
+  border-radius: 50px; /* Rounded for a modern look */
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 2px solid #ff66b2; /* Pink border */
+  transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.hero .btn:hover {
+  background-color: #ff66b2; /* Pink background on hover */
+  color: white; /* Text turns white on hover */
+  box-shadow: 0 0 15px rgba(255, 102, 178, 0.7), 0 0 25px rgba(255, 102, 178, 0.8); /* Pink glow on hover */
+}
+
+/* Cake Catalog */
+.cake-catalog {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cake-catalog h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #ff66b2;
+}
+
+/* Grid Layout with Wider Cards */
+.cake-listing {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 cards per row */
+  gap: 30px;
+  justify-items: center;
+}
+
+/* Cake Card - Pink and White Theme */
+/* Cake Card - Pink and White Theme */
+.cake-card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(255, 102, 178, 0.2); /* Pink shadow */
+  padding: 25px;
+  max-width: 500px; /* Increased max width for a more medium card */
+  width: 100%; /* Ensure cards take full available width */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+  border: 2px solid rgba(255, 102, 178, 0.2); /* Light pink border */
+}
+
+
+.cake-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 20px rgba(255, 102, 178, 0.5); /* Stronger pink shadow on hover */
+}
+
+/* Cake Image */
+.cake-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(255, 102, 178, 0.3); /* Subtle pink glow around image */
+}
+
+/* Cake Content */
+.cake-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 15px 0 10px;
+  color: #ff66b2;
+}
+
+.cake-price {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.cake-flavor {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.cake-description {
+  font-size: 1rem;
+  color: #999;
+  margin-bottom: 15px;
+}
+
+/* Add to Cart Button - Pink Theme */
+.add-to-cart {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #ff66b2; /* Bright pink button */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+}
+
+.add-to-cart:hover {
+  background-color: #e60073; /* Darker pink on hover */
+  box-shadow: 0 0 10px #ff66b2, 0 0 20px #ff66b2;
+}
+
+/* Responsive Media Queries */
+
+/* Large Screens */
+@media (min-width: 1200px) {
   .cake-listing {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 40px;
   }
-  
-  .cake {
-    background: #fff;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
+
+  .cake-card {
+    max-width: 474px; /* Even wider for larger screens */
   }
-  
-  .cake img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 15px;
+
+  .cake-title {
+    font-size: 1.9rem;
   }
-  
-  .cake h3 {
+
+  .cake-price {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablets and Small Laptops */
+@media (max-width: 991px) {
+  .cake-listing {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+
+  .cake-title {
+    font-size: 1.6rem;
+  }
+
+  .cake-price {
+    font-size: 1.4rem;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+  .cake-listing {
+    grid-template-columns: 1fr; /* Single column for mobile */
+  }
+
+  .cake-card {
+    max-width: 100%;
+  }
+
+  .cake-title {
     font-size: 1.5rem;
-    color: #333;
-    margin-bottom: 10px;
   }
-  
-  .cake p {
+
+  .cake-price {
+    font-size: 1.3rem;
+  }
+
+  .cake-description {
     font-size: 1rem;
-    color: #666;
-    margin-bottom: 10px;
   }
-  
-  .cake button {
-    background-color: #f8b500;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius:  0px 30px 0px 30px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .cake button:hover {
-    background-color: #bb377d; 
-    transform: translateY(-3px); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero h1 {
-      font-size: 2rem;
-    }
-  
-    .hero p {
-      font-size: 1rem;
-    }
-  
-    .hero .btn {
-      padding: 12px 25px;
-      font-size: 1rem;
-    }
-  
-    .cake-catalog h2 {
-      font-size: 1.8rem;
-    }
-  
-    .cake {
-      padding: 15px;
-    }
-  
-    .cake h3 {
-      font-size: 1.3rem;
-    }
-  
-    .cake p {
-      font-size: 0.9rem;
-    }
-  
-    .cake button {
-      padding: 8px 16px;
-      font-size: 0.9rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .hero h1 {
-      font-size: 1.8rem;
-    }
-  
-    .hero p {
-      font-size: 0.9rem;
-    }
-  
-    .hero .btn {
-      padding: 10px 20px;
-      font-size: 0.9rem;
-    }
-  
-    .cake-catalog h2 {
-      font-size: 1.6rem;
-    }
-  
-    .cake {
-      padding: 10px;
-    }
-  
-    .cake h3 {
-      font-size: 1.2rem;
-    }
-  
-    .cake p {
-      font-size: 0.8rem;
-    }
-  
-    .cake button {
-      padding: 6px 14px;
-      font-size: 0.8rem;
-    }
-  }
-  
+}
