@@ -1,5 +1,8 @@
 /* Base Styles */
 .about-section {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   background: linear-gradient(145deg, #fbd3e9, #bb377d);
   color: #fff;
   padding: 40px;

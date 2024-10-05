@@ -17,6 +17,7 @@ function Cart({ cart, removeFromCart, placeOrder }) {
   };
 
   return (
+    
     <section id="cart" className="cart">
       <ToastContainer />
       <h2>Your Cart</h2>
@@ -31,6 +32,7 @@ function Cart({ cart, removeFromCart, placeOrder }) {
                 <span>{cake.name}</span>
                 <span>${cake.price} x {cake.quantity}</span>
               </div>
+              
               <button className="remove-btn" onClick={() => handleRemove(cake.id)}>
                 <FaTrashAlt />
               </button>
@@ -38,8 +40,12 @@ function Cart({ cart, removeFromCart, placeOrder }) {
           ))}
         </ul>
       )}
+      
+      
       {cart.length > 0 && <button onClick={handlePlaceOrder} className="order-btn">Place Order</button>}
+   
     </section>
+    
   );
 }
 
