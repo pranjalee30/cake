@@ -91,7 +91,7 @@
     "id": 12, 
     "name": "Red Velvet Delight", 
     "flavor": "Chocolate", 
-    "description": "Red Velvet Delight is a luxurious cake that combines the smooth texture of red velvet with the richness of chocolate. This cake is perfect for special occasions, offering a touch of elegance with every slice.", 
+    "description": "Red Velvet Delight is a luxurious cake that combines the smooth texture of red velvet with the richness of chocolate. This cake is perfect for special occasions, offering a touch of elegance with every slice.Look Delicious.", 
     "price": 36, 
     "img": "12.jpeg" 
   },
@@ -171,7 +171,7 @@
     "id": 22,
     "name": "Tropical Fruit Cake",
     "flavor": "Fruit",
-    "description": "A light and refreshing cake with a tropical fruit flavor, perfect for summer celebrations.",
+    "description": "A light and refreshing cake with a tropical fruit flavor, perfect for summer celebrations.You can enjoy it anytime",
     "price": 32,
     "img": "22.jpg"
   },
@@ -179,7 +179,7 @@
     "id": 23,
     "name": "Salted Caramel Cake",
     "flavor": "Caramel",
-    "description": "A sweet and salty cake with a caramel frosting, a decadent and indulgent treat.",
+    "description": "A sweet and salty cake with a caramel frosting, a decadent and indulgent treat.perfect for summer celebrations",
     "price": 36,
     "img": "23.jpg"
   },
@@ -187,7 +187,7 @@
     "id": 24,
     "name": "Chocolate Peanut Butter Cake",
     "flavor": "Chocolate",
-    "description": "A rich chocolate cake with a peanut butter frosting, a classic combination for chocolate lovers.",
+    "description": "A rich chocolate cake with a peanut butter frosting, for chocolate lovers.",
     "price": 34,
     "img": "24.jpg"
   },
@@ -203,7 +203,7 @@
     "id": 26,
     "name": "Lavender Cake",
     "flavor": "Lavender",
-    "description": "A delicate lavender-flavored cake with a hint of vanilla, a unique and aromatic dessert.",
+    "description": "A delicate lavender-flavored cake with a hint of vanilla, a unique and aromatic dessert. perfect for Rainy celebrations.",
     "price": 32,
     "img": "26.jpg"
   },
@@ -211,7 +211,7 @@
     "id": 27,
     "name": "Rum Cake",
     "flavor": "Rum",
-    "description": "A moist and flavorful cake with a rum flavor, perfect for a special occasion.",
+    "description": "A moist and flavorful cake with a rum flavor, perfect for a special occasion. Enjoy anytime.",
     "price": 35,
     "img": "27.jpg"
   },

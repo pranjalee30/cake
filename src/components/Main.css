@@ -67,7 +67,7 @@ main {
   
   .cake img {
     width: 100%;
-    height: auto;
+    height: 18rem;
     border-radius: 10px;
     margin-bottom: 15px;
   }
