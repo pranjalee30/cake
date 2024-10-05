@@ -208,6 +208,13 @@ main {
 
   .cake-card {
     max-width: 100%;
+
+  
+  .cake img {
+    width: 100%;
+    height: 18rem;
+    border-radius: 10px;
+    margin-bottom: 15px;
   }
 
   .cake-title {
