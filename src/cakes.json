@@ -94,5 +94,150 @@
     "description": "Red Velvet Delight is a luxurious cake that combines the smooth texture of red velvet with the richness of chocolate. This cake is perfect for special occasions, offering a touch of elegance with every slice.", 
     "price": 36, 
     "img": "12.jpeg" 
+  },
+  {
+    "id": 13,
+    "name": "Vanilla Dream",
+    "flavor": "Vanilla",
+    "description": "A classic vanilla cake, moist and fluffy, with a hint of lemon zest for a bright and refreshing taste.",
+    "price": 28,
+    "img": "13.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Chocolate Ganache Cake",
+    "flavor": "Chocolate",
+    "description": "A rich chocolate cake layered with smooth, creamy chocolate ganache, perfect for chocolate lovers.",
+    "price": 32,
+    "img": "14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Strawberry Shortcake",
+    "flavor": "Vanilla",
+    "description": "A light and airy vanilla cake layered with fresh strawberries and whipped cream, a classic summer dessert.",
+    "price": 30,
+    "img": "15.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Carrot Cake",
+    "flavor": "Spice",
+    "description": "A moist and flavorful carrot cake with walnuts and cream cheese frosting, a comforting treat.",
+    "price": 26,
+    "img": "16.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Lemon Blueberry Cake",
+    "flavor": "Lemon",
+    "description": "A tangy lemon cake with fresh blueberries and a lemon glaze, a refreshing and light dessert.",
+    "price": 28,
+    "img": "17.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Tiramisu Cake",
+    "flavor": "Coffee",
+    "description": "A classic Italian dessert, a coffee-flavored sponge cake layered with mascarpone cheese and cocoa powder.",
+    "price": 35,
+    "img": "18.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Almond Cake",
+    "flavor": "Almond",
+    "description": "A delicate almond-flavored cake with a hint of vanilla, perfect for a light and elegant dessert.",
+    "price": 30,
+    "img": "19.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Black Forest Cake",
+    "flavor": "Chocolate",
+    "description": "A rich chocolate cake layered with cherries, whipped cream, and chocolate shavings, a classic German dessert.",
+    "price": 38,
+    "img": "20.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Red Velvet Cheesecake",
+    "flavor": "Red Velvet",
+    "description": "A creamy cheesecake with a red velvet cake crust, a decadent and indulgent dessert.",
+    "price": 40,
+    "img": "21.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Tropical Fruit Cake",
+    "flavor": "Fruit",
+    "description": "A light and refreshing cake with a tropical fruit flavor, perfect for summer celebrations.",
+    "price": 32,
+    "img": "22.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Salted Caramel Cake",
+    "flavor": "Caramel",
+    "description": "A sweet and salty cake with a caramel frosting, a decadent and indulgent treat.",
+    "price": 36,
+    "img": "23.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Chocolate Peanut Butter Cake",
+    "flavor": "Chocolate",
+    "description": "A rich chocolate cake with a peanut butter frosting, a classic combination for chocolate lovers.",
+    "price": 34,
+    "img": "24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Honey Cake",
+    "flavor": "Honey",
+    "description": "A moist and flavorful cake with a honey-spice flavor, a comforting and unique dessert.",
+    "price": 28,
+    "img": "25.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Lavender Cake",
+    "flavor": "Lavender",
+    "description": "A delicate lavender-flavored cake with a hint of vanilla, a unique and aromatic dessert.",
+    "price": 32,
+    "img": "26.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Rum Cake",
+    "flavor": "Rum",
+    "description": "A moist and flavorful cake with a rum flavor, perfect for a special occasion.",
+    "price": 35,
+    "img": "27.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Coffee Cake",
+    "flavor": "Coffee",
+    "description": "A moist and flavorful cake with a coffee flavor, often topped with streusel, perfect for a morning treat.",
+    "price": 25,
+    "img": "28.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Pumpkin Spice Cake",
+    "flavor": "Spice",
+    "description": "A moist and flavorful cake with a pumpkin spice flavor, perfect for fall celebrations.",
+    "price": 26,
+    "img": "29.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Oreo Cheesecake",
+    "flavor": "Chocolate",
+    "description": "A creamy cheesecake with an Oreo cookie crust, a decadent and indulgent dessert.",
+    "price": 38,
+    "img": "30.jpg"
   }
+
 ]
