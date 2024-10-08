@@ -6,6 +6,13 @@
   height: 100vh;
   background: #f5f5f5; /* Light background color */
 }
+.dark-login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #0f172a, #334155);
+}
 
 /* Styling for the login form */
 .login-form {

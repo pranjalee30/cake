@@ -75,6 +75,9 @@ main {
   .cake-catalog h2 {
     font-size: 2rem;
     margin-bottom: 20px;
+    background: linear-gradient(to right, #022c43, #026c7c);
+    background-clip: text;
+    color: transparent;
   }
   
   /* Cake Listings */

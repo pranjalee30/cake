@@ -1,4 +1,4 @@
-import React, { useState} from "react";
+import React, { useState,useEffect} from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header.js";
 import Main from "./components/Main.js";
@@ -11,12 +11,16 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const [theme, setTheme] = useState("light");
+  const setMode =()=>{
+    return JSON.parse(localStorage.getItem('mode')) || false ;
+  }
   const [cart, setCart] = useState([]);
+  const [theme, setTheme] = useState(setMode());
+  useEffect(() => {
+    localStorage.setItem('mode',JSON.stringify(theme));
+  }, [theme])
+  
 
-  const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === "light" ? "dark" : "light"));
-  };
 
   const addToCart = (item) => {
     setCart(prevCart => {
@@ -57,8 +61,8 @@ function App() {
 
   return (
     <Router>
-      <div className={`App ${theme}`}>
-        <Header theme={theme} toggleTheme={toggleTheme} />
+      <div className={theme ?"App dark":"App false"}>
+        <Header Theme={{theme,setTheme}} />
         <Routes>
           <Route path="/cart" element={<Cart cart={cart} removeFromCart={removeFromCart} placeOrder={placeOrder} />} />
           <Route path="/" element={<Main
@@ -67,10 +71,10 @@ function App() {
             removeFromCart={removeFromCart}
             placeOrder={placeOrder}
           />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/login" element={<Login />}/>
+          <Route path="/about" element={<About theme={theme} />} />
+          <Route path="/login" element={<Login theme={theme} />}/>
         </Routes>
-        <Footer />
+        <Footer Theme={theme} />
         <ToastContainer />
       </div>
     </Router>

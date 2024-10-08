@@ -1,19 +1,23 @@
 /* Header.css */
 .header {
   /* background: rgb(39, 38, 38); */
-  background: rgb(78,73,75);
-  background: radial-gradient(circle, rgba(78,73,75,1) 16%, rgba(6,6,6,1) 65%);
   padding: 20px;
   border-bottom: 5px solid #f8b500;
   transition: background 0.3s, border-bottom 0.3s;
 }
 
-.header.light {
+.lightHeader {
   background: linear-gradient(145deg, #fbd3e9, #a4a3a4);
+  padding: 20px;
+  border-bottom: 5px solid #f8b500;
+  transition: background 0.3s, border-bottom 0.3s;
 }
 
-.header.dark {
-  background: linear-gradient(145deg, #333333, #555555);
+.darkHeader {
+  background: rgb(78,73,75);
+  background: radial-gradient(circle, rgba(78,73,75,1) 16%, rgba(6,6,6,1) 65%);
+  border-bottom: 5px solid #f8b500;
+  transition: background 0.3s, border-bottom 0.3s;
 }
 
 .navigation {

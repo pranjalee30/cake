@@ -11,6 +11,21 @@
   position: relative;
 }
 
+.dark-about{
+  background: linear-gradient(to right, #022c43, #026c7c);
+  color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 1200px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  position: relative;
+}
+.dark-about h2{
+  color:white
+}
+
 .about-section h2 {
   font-family: 'Pacifico', cursive;
   font-size: 2rem;

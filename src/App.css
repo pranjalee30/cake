@@ -25,15 +25,15 @@ main {
 }
 
 /* Light theme styles */
-.App.light {
+.light {
   background-color: white;
   color: black;
 }
 
 /* Dark theme styles */
-.App.dark {
-  background-color: black;
+.dark {
   color: white;
+  background: linear-gradient(to right, #0f172a, #334155);
 }
 
 /* Footer setup */

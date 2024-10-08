@@ -3,9 +3,10 @@ import './Footer.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookF, faTwitter, faInstagram} from '@fortawesome/free-brands-svg-icons';
 
-function Footer() {
+
+function Footer({Theme}) {
   return (
-    <footer>
+    <footer className={Theme ?"footer dark-footer":"footer"}>
       <div className="icons first">
         <li><a href="#"><FontAwesomeIcon icon={faFacebookF} /></a></li>
         <li><a href="#"><FontAwesomeIcon icon={faTwitter} /></a></li>
