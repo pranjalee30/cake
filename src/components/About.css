@@ -14,7 +14,7 @@
 .about-section h2 {
   font-family: 'Pacifico', cursive;
   font-size: 2rem;
-  color: #f8b500; 
+  color: #090700; 
 
   margin-bottom: 20px;
   text-align: center; /* Center the heading */
@@ -25,6 +25,7 @@
   font-size: 1.1rem;
   line-height: 1.6;
   text-align: center;
+  color: black;
 }
 
 .contact-button-container {
