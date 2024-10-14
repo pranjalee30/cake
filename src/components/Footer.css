@@ -6,8 +6,14 @@ footer {
   padding: 20px;
   border-top: 1px solid #ccc;
 }
+.dark-footer{
+  background: rgb(78,73,75);
+  background: radial-gradient(circle, rgba(78,73,75,1) 16%, rgba(6,6,6,1) 65%);
+}
+
 .copyright{
-  color:black;
+  color:rgb(252, 247, 247);
+  font-weight: 700;
 }
 
 .icons {

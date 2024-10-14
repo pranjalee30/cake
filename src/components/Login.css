@@ -6,10 +6,21 @@
   height: 100vh;
   background: #f5f5f5; /* Light background color */
 }
+.dark-login-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #0f172a, #334155);
+}
 
 /* Styling for the login form */
 .login-form {
-  background: #fff; /* White background for the form */
+  backdrop-filter: blur(12px) saturate(142%);
+  -webkit-backdrop-filter: blur(12px) saturate(142%);
+  background-color: rgba(209, 211, 211, 0.54);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3); /* White background for the form */
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -27,7 +38,7 @@
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
-  color: #333;
+  color: #333333;
 }
 
 /* Header styling */
@@ -144,7 +155,7 @@ h2 {
 /* Login button styling */
 .login-button {
   margin:0 auto;
-  background-color: #bb377d;
+  background-color: #049610;
   color: white;
   padding: 15px 30px;
   font-size: 1rem;

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './About.css';
 import './ContactUs.css';
 
-function About() {
+function About({theme}) {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
@@ -10,7 +10,7 @@ function About() {
 
   return (
     <div>
-      <section id="about" className="about-section">
+      <section id="about" className={theme ?"dark-about" :"about-section"}>
         <h2>About Us</h2>
         <p>
           Welcome to Cake Creations! Our bakery is dedicated to crafting

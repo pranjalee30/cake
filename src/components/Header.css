@@ -1,23 +1,30 @@
 /* Header.css */
 .header {
-  background: linear-gradient(145deg, #fbd3e9, #bb377d);
+  /* background: rgb(39, 38, 38); */
   padding: 20px;
   border-bottom: 5px solid #f8b500;
   transition: background 0.3s, border-bottom 0.3s;
 }
 
-.header.light {
-  background: linear-gradient(145deg, #fbd3e9, #bb377d);
+.lightHeader {
+  background: linear-gradient(145deg, #fbd3e9, #a4a3a4);
+  padding: 20px;
+  border-bottom: 5px solid #f8b500;
+  transition: background 0.3s, border-bottom 0.3s;
 }
 
-.header.dark {
-  background: linear-gradient(145deg, #333333, #555555);
+.darkHeader {
+  background: rgb(78,73,75);
+  background: radial-gradient(circle, rgba(78,73,75,1) 16%, rgba(6,6,6,1) 65%);
+  border-bottom: 5px solid #f8b500;
+  transition: background 0.3s, border-bottom 0.3s;
 }
 
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 }
 
 .navigation a {
@@ -25,9 +32,16 @@
 }
 
 .company-name {
-  font-family: 'Pacifico', cursive;
-  font-size: 2.5rem;
+  font-size: 1.5rem !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif !important;
+  font-weight: bold;
+  height:8vh;
+  width:20vw;
+  padding:2vw ;
   color: #fff;
+  display:flex ;
+  justify-items:center ;
+  align-items: center ;
   text-decoration: none;
 }
 
