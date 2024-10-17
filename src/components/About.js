@@ -10,27 +10,51 @@ function About() {
 
   return (
     <div>
-      <section id="about" className="about-section">
+      {/* Hero Section */}
+      <section className="about-hero">
+        <div className="hero-overlay">
+          <h1>Welcome to Cake Creations</h1>
+          <p>Delighting every celebration with our handcrafted cakes.</p>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="about-details">
         <h2>About Us</h2>
-        <p>
-          Welcome to Cake Creations! Our bakery is dedicated to crafting
-          exquisite cakes that bring joy to every celebration. From classic
-          flavors to custom designs, we cater to all your cake desires with the
-          finest ingredients and artistic flair. Our mission is to sweeten your
-          special moments and create unforgettable experiences. Visit us and
-          discover the magic of Cake Creations, where every bite is a delight.
-          <br />
-          <br />
-          Thank you for choosing Cake Creations. We look forward to being a part
-          of your sweetest celebrations!
-        </p>
+        <p className='about-us-paragraph'>Our bakery is dedicated to crafting exquisite cakes that bring joy to every celebration. From classic flavors to custom designs, we cater to all your cake desires with the finest ingredients and artistic flair. Our mission is to sweeten your special moments and create unforgettable experiences. Visit us and discover the magic of Cake Creations, where every bite is a delight.
+<br /><br />
+Thank you for choosing Cake Creations. We look forward to being a part of your sweetest celebrations!</p>
+
+        <h2>Our Story</h2>
+        <div className="info-grid">
+          <div className="info-card">
+            <img src="https://cake-cyan.vercel.app/images/27.jpg" alt="Cake Icon" />
+            <h3>Exquisite Flavors</h3>
+            <p>
+              From rich chocolate to fruity delights, our range of flavors is crafted with passion.
+            </p>
+          </div>
+          <div className="info-card">
+            <img src="https://cake-cyan.vercel.app/images/24.jpg" alt="Artistic Designs" /> 
+            <h3>Artistic Designs</h3>
+            <p>
+              Each cake is a piece of art, tailored to your celebration.
+            </p>
+          </div>
+          <div className="info-card">
+             <img src="https://cake-cyan.vercel.app/images/30.jpg" alt="Finest Ingredients" />
+            <h3>Finest Ingredients</h3>
+            <p>
+              We use only the best ingredients for a taste you'll never forget.
+            </p>
+          </div>
+        </div>
         <div className="contact-button-container">
           <button onClick={openModal} className="open-modal-button">
             Contact Us
           </button>
         </div>
       </section>
-
       {isOpen && (
         <div className="modal-overlay">
           <div className="modal-content">
