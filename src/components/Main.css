@@ -109,9 +109,7 @@ main {
 
 .cake:hover,
 .cake:focus {
-  transform: scale3d(1.006, 1.006, 1); /* Scaling on hover */
-
-  /* Increase shadow opacity */
+  transform: scale3d(1.006, 1.006, 1);
   &::after {
     opacity: 1;
   }
@@ -127,11 +125,16 @@ main {
   border-radius: 10px;
   margin-bottom: 15px;
 }
-
-.cake h3 {
-  font-size: 1.5rem;
-  color: #ffffff;
+.cake-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 10px;
+}
+.cake h3 {
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 2px;
 }
 
 .cake p {
@@ -140,16 +143,41 @@ main {
   margin-bottom: 10px;
 }
 
-.cake button {
+.cake-price {
+  font-size: 0.8rem;
+  color: #ffd7e8;
+  font-weight: bold;
+}
+.cake-flavor {
+  font-size: 1rem;
+  color: #ffe4f2;
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.cake-description {
+  font-size: 1rem;
+  color: #ffe4f2;
+  margin-bottom: 15px;
+}
+.add-to-cart {
   background-color: #f8b500;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 0px 30px 0px 30px;
+  border-radius: 30px;
   font-size: 1rem;
+  font-family: Arial, sans-serif;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
+.add-to-cart:hover {
+  background-color: #bb377d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*  */
 
 .cake button:hover {
   background-color: #bb377d;
@@ -180,7 +208,7 @@ main {
   }
 
   .cake h3 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .cake p {
@@ -216,7 +244,7 @@ main {
   }
 
   .cake h3 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .cake p {

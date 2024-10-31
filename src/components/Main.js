@@ -1,6 +1,7 @@
 import React from "react";
 import "./Main.css";
 import cakesData from "../cakes.json";
+
 function Main({ addToCart }) {
   return (
     <main>
@@ -22,11 +23,15 @@ function Main({ addToCart }) {
                 alt={cake.name}
               />
               <div className="cake-overlay">
-                <h3>{cake.name}</h3>
-                <p>{cake.description}</p>
-                <p>{cake.flavor}</p>
-                <p>Price: ${cake.price}</p>
-                <button onClick={() => addToCart(cake)}>Add to Cart</button>
+                <div className="cake-header">
+                  <h3>{cake.name}</h3>
+                  <p className="cake-price">Price: ${cake.price}</p>
+                </div>
+                <p className="cake-flavor">{cake.flavor}</p>
+                <p className="cake-description">{cake.description}</p>
+                <button className="add-to-cart" onClick={() => addToCart(cake)}>
+                  Add to Cart
+                </button>
               </div>
             </div>
           ))}
