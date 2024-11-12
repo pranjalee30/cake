@@ -22,7 +22,6 @@ Welcome to **Cake Creations**, your online destination for delicious, handcrafte
 - 🛒 **Add to Cart**: Seamlessly add your favorite cakes to the shopping cart.
 - 📜 **About Us Section**: Learn about Cake Creations and our dedication to quality.
 - 🎂 **Responsive Design**: Optimized for mobile, tablet, and desktop devices.
-- 🌐 **User Authentication**: Users can log in & sign up.
 
 ---
 
