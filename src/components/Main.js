@@ -1,8 +1,8 @@
 import React from "react";
-import './Main.css';
-import cakesData from '../cakes.json';
-function Main({ addToCart }) {
+import "./Main.css";
+import cakesData from "../cakes.json";
 
+function Main({ addToCart }) {
   return (
     <main>
       <section id="home" className="hero">
@@ -16,14 +16,23 @@ function Main({ addToCart }) {
       <section id="cakes" className="cake-catalog">
         <h2>Our Cakes</h2>
         <div className="cake-listing">
-          {cakesData.map(cake => (
+          {cakesData.map((cake) => (
             <div className="cake" key={cake.id}>
-              <img src={`${process.env.PUBLIC_URL}/images/${cake.img}`} alt={cake.name} />
-              <h3>{cake.name}</h3>
-              <p>{cake.description}</p>
-              <p>{cake.flavor}</p>
-              <p>Price: ${cake.price}</p>
-              <button onClick={() => addToCart(cake)}>Add to Cart</button>
+              <img
+                src={`${process.env.PUBLIC_URL}/images/${cake.img}`}
+                alt={cake.name}
+              />
+              <div className="cake-overlay">
+                <div className="cake-header">
+                  <h3>{cake.name}</h3>
+                  <p className="cake-price">Price: ${cake.price}</p>
+                </div>
+                <p className="cake-flavor">{cake.flavor}</p>
+                <p className="cake-description">{cake.description}</p>
+                <button className="add-to-cart" onClick={() => addToCart(cake)}>
+                  Add to Cart
+                </button>
+              </div>
             </div>
           ))}
         </div>
